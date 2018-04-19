@@ -1,0 +1,328 @@
+a:focus, a:hover {
+	color: transparent;
+}
+a {
+	text-decoration: none;
+	color: transparent;
+	text-shadow: 2px 2px 4px transparent;
+}
+body {
+	margin: 0px;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	background-color: black;
+}
+button {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	
+}
+hr {
+	margin: 0 32%;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+}
+video {
+	opacity: 0.4;
+}
+
+/* Classes */
+video.vid { 
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+    background: url(https://my.mixtape.moe/emzext.gif) no-repeat;
+    background-size: cover; 
+}
+.grow {
+	transition: all .2s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.05);
+}
+.hello {
+	letter-spacing: 5px;
+	margin: 0;
+	font-family: 'Monda', sans-serif;
+	color: #000;
+	margin-bottom: 5px;
+}
+.pagetwo {
+	height: 400px;
+	background-color: #3e5b42;
+	text-align: center;
+}
+.pagetwo-items {
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+	background-size: cover;
+	margin: 10px 15px;
+	border-radius: 2%;
+}
+.shill {
+	width: 35px;
+	height: 35px;
+	margin: 15px 5px 0px;
+}
+
+/* ID's */
+#avi {
+	width: 170px;
+	border-radius: 50%;	
+	z-index: 1;
+	margin: auto;
+	display: block;
+}
+#colours {
+	width: 4.71428571429%;
+	display: inline-block;
+	margin: 0;
+	padding: 10px;
+}
+#crypto {
+	display: none;
+	color: #000;
+}
+#datetime {
+	font-size: 14px;
+}
+#fix {
+	margin-right: 35px;
+}
+#goals {
+	display: none;
+	width: 476px;
+	margin: 0 auto;
+}
+#line {
+	padding: 100px 0 0 0;
+	border: 1px solid white;
+	max-width: 1px;
+	top: 93%;
+	left: 50%;
+	margin: auto;
+}
+#margin1 {
+	margin-top: 115px;
+}
+#margin2 {
+	margin-top: 50px;
+}
+#name {
+	text-align: center;
+	width: 100%;
+	text-shadow: 2px 2px 4px #000000;
+	letter-spacing: 0px;
+	padding-bottom: 10%;
+	font-size: 0px;
+}
+#name2 {
+	top: 26%;
+	left: -1%;
+	font-size: 55px;
+	letter-spacing: 10px;
+	text-align: center;
+	width: 100%;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Libre Barcode 39 Extended Text', cursive;
+	margin-bottom: 20px;
+}
+#square {
+	background-color: #fff;
+	padding: 25px 30px 25px 30px;
+	width: 33%;
+	opacity: 0.8;
+	margin: 0 auto;
+}
+
+/*Margins*/
+@media screen and (max-height: 720px) {
+	#margin1 {
+		margin-top: 90px;
+	}
+	#margin2 {
+		margin-top: 35px;
+	}
+}
+@media screen and (max-height: 600px) {
+	#margin1 {
+		margin-top: 70px;
+	}
+	#margin2 {
+		margin-top: 25px;
+	}
+}
+
+/* Square Fix */
+@media screen and (max-width: 1700px) {
+	#square {
+		width: 49%;
+	}
+	#colours {
+		width: 7%;
+	}
+}
+@media screen and (max-width: 1300px) {
+	#square {
+		width: 59%;
+	}
+	#colours {
+		width: 8.42857142857%;
+	}
+}
+@media screen and (max-width: 910px) {
+	#square {
+		width: 76%;
+	}
+	#colours {
+		width: 10.8571428571%;
+	}
+}
+@media screen and (max-width: 650px) {
+	#square {
+		width: 95%;
+	}
+	#colours {
+		width: 13.5714285714%;
+	}
+}
+
+/*Mobile Machine*/
+@media screen and (max-width: 880px) {
+	#name2 {
+		font-size: 28px;
+	}
+	.shill {
+		width: 30px;
+		height: 30px;
+	}
+	.hello {
+		letter-spacing: 5px;
+		margin: 0;
+	}
+	#square {
+		width: 95%;
+	}
+	#colours {
+		width: 13.5714285714%;
+	}
+}
+@media screen and (max-width: 500px) {
+	#name2 {
+		font-size: 24px;
+	}
+	.hello {
+		font-size: 9px;
+	}
+}
+@media screen and (max-width: 200px) {
+	#name2 {
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+	.hello {
+		font-size: 9px;
+	}
+}
+@media screen and (max-height: 736px) {
+	#name2 {
+		font-size: 34px;
+	}
+	#contact {
+		font-size: 8px;
+	}
+	.shill {
+		width: 20px;
+		height: 20px;
+	}
+}
+@media screen and (max-height: 600px) {
+	#name2 {
+		font-size: 32px;
+	}
+	.shill {
+		width: 20px;
+		height: 20px;
+	}
+}
+@media screen and (max-height: 500px) {
+	#avi {
+		top: 1%;
+	}
+}
+
+/* Animations */
+#fade {
+	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera */
+	-moz-animation: fadein 4s; /* Firefox */
+	-ms-animation: fadein 4s; /* Internet Explorer */
+	-o-animation: fadein 4s; /* Opera */
+	animation: fadein 4s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+.chachaslide {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+	from { bottom:-100px; opacity:0 } 
+	to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+	from{ bottom:-100px; opacity:0 } 
+	to{ bottom:0; opacity:1 }
+}
+
+/* Loader */
+.no-js #loader {
+	display: none;
+}
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../loader.gif) center no-repeat #fff;
+	background-color: #101010;
+}
