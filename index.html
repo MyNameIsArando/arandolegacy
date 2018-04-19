@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>Arando | Home</title>
+<head>
+	<!-- Website & Images hosted by Github. -->
+	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
+	<!-- Contact Email: tylercrowhurst123@gmail.com -->
+	<!-- Coded from scratch using VSCode | Tested using Firefox -->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<script src="js/script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<meta property="title" content="MyNameIsArando">
+	<meta name="description" content="I can't actually code">
+	<meta name="author" content="MyNameIsArando">
+	<meta charset='utf-8'>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script>
+	// Loader //
+	$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+	
+<body class="crt">
+	<div class="se-pre-con"></div>
+	<div class="container">
+		<img src="avi.gif" id="top-image" />
+		<p id="title" class="crt">MYNAMEISARANDO</p>
+		<hr class="line-grow" />
+		<p class="comein-left">I'm a College student/webdev in the UK that's bad at coding and sleeping.</p>
+		<p class="comein-right">If you need to contact me, add MyNameIsArando#4810 on Discord or email me <a href="mailto:tylercrowhurst123@gmail.com" style="color: #909090">here</a><span class="blink">_</span></p>
+		<br />
+		<p style="color: red; cursor: pointer;" id="pro" class="effect">Projects</p>
+		<p style="color: green; cursor: pointer;" id="recommend" class="effect">Recommendations</p>
+		<p style="color: cyan;" class="effect">Music: Garoad - Synthestitch</p>
+		<br />
+		<p class="typewriter"><a href="https://twitter.com/mynameisarando" class="social">TWITTER</a> | <a href="https://myanimelist.net/profile/mynameisarando" class="social">MYANIMELIST</a> | <a href="https://youtube.com/user/tylercrowhurst12345" class="social">YOUTUBE</a> | <a href="https://github.com/MyNameIsArando/mynameisarando.github.io" class="social">GITHUB</a> | <a href="http://steamcommunity.com/id/MyNameIsArando/" class="social">STEAM</a> | <a href="http://discord.gg/track44" class="social">DISCORD</a> | <a href="https://osu.ppy.sh/users/4993669" class="social">OSU</a> | <a href="https://www.paypal.me/TylerCrowhurst" class="social">PAYPAL</a></p>
+		<p id="mute" onclick="muteBg()">Mute</p>
+		<a href="https://youtu.be/5AkJ_7rIOyQ" target="blank"><p class="oi">buy me this please</p></a>
+		<div id="popup" class="modal">
+			<div class="pop-content">
+			<span class="close">&times;</span>
+			<p>Recommendations, AKA my shit taste...</p> 
+			<hr />
+			<p>
+				<span style="color: red;">Anime:</span><br />
+				The Monogatari Series <br />
+				JoJo <br />
+				Index/Railgun <br />
+				Kuzu no Honkai <br />
+				Kore wa Zombie Desu ka? <br />
+				Hataraku Maou-sama! <br />
+				<br />
+				<span style="color: green;">Music:</span><br />
+				Dragonforce <br />
+				Babymetal <br />
+				BROCKHAMPTON <br />
+				Kendrick Lamar <br />
+				Undead Corporation <br />
+				Fear, and Loathing in Las Vegas <br />
+				<br />
+				<span style="color: cyan;">Video Games:</span><br />
+				Hotlne Miami 1 & 2 <br />
+				Persona Series <br />
+				Metal Gear Solid Series<br />
+				Far Cry Series<br />
+				VA-11 HALL-A <br />
+				<img src="img/osu.png" style="margin: 0 auto; display: block; width: 30%;" />
+			</p>
+			</div>
+		</div>
+	</div>
+	<audio autoplay loop id="volumedown">
+		<source src="audio.mp3" type="audio/mpeg">
+	</audio>
+	<div id="projects">
+		<h2>PROJECTS</h2>
+		<hr />
+		<p id="projects-subtitle">Click to view/download</p>
+		<a href="http://arando.club/oc"><img src="img/wp.png" id="wallpaper" class="grow" /></a>
+		<br />
+		<a href="https://drive.google.com/open?id=1P4mHJzJ0DU2A_3098xH1zQHq8utowrJK">
+			<div class="item grow" style="background-image:url(img/va-11.png)">
+				<p class="item-text">VA-11 HALL-A KLWP WP</p>
+			</div>
+		</a>
+		<a href="http://arando.club/theteam">
+			<div class="item grow" style="background-image:url(img/team.png)">
+				<p class="item-text">TRACK 44 | THE TEAM</p>
+			</div>
+		</a>
+	</div>
+	<script>
+		// Audio Volume | Thanks Demi //
+		document.getElementById("volumedown").volume = 0.04;
+		function muteBg() {
+		document.getElementById("volumedown").volume = 0;
+		}
+		var modal = document.getElementById('popup');
+		var btn = document.getElementById("recommend");
+		var span = document.getElementsByClassName("close")[0];
+
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		$(document).ready(function(){
+			$("#pro").click(function(){
+				$("#projects").slideToggle("slow");
+			});
+		});
+	</script>
+</body>
+</html>
