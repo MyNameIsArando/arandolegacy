@@ -124,6 +124,8 @@ ul {
   background-image: url('../img/header-back.jpg');
   min-height: 100%;
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Loader */ /* Not my code */
