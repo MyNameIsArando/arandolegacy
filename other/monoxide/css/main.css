@@ -1,0 +1,148 @@
+a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px 4px transparent;
+}
+body {
+	margin: 0;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	background-color: #030303;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/tile.jpg");
+}
+button {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	
+}
+h2 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 1.6em;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+	margin: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+hr {
+	margin: 1% 84% 3% 0;
+	border-top: 1px solid #fff;
+}
+html {
+  height: 100%;
+}
+p {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 1em;
+	color: white;
+	text-align: left;
+	text-shadow: 2px 2px #000;
+	margin: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+ul {
+	padding: 0;
+}
+
+/* Classes */
+.blog-changelog {
+  padding: 10px 0;
+  color: #909090;
+}
+.blog-changelog-title {
+  font-size: 1.4em;
+}
+.blog-content {
+  color: #929292;
+  padding: 20px 0;
+}
+.blog-date {
+  font-size: 1.6;
+  color: #909090;
+  margin-bottom: 25px;
+}
+.blog-image {
+  width: 400px;
+}
+.blog-title {
+  font-size: 1.8em;
+}
+.blog-wrapper {
+  padding: 20px 0;
+  border-bottom: 2px solid #101010;
+}
+.container {
+  padding: 50px 300px;
+}
+.large-head {
+  font-size: 2.4em;
+}
+.section-sep {
+  padding-top: 100px;
+}
+.screenshot {
+  display: inline-block;
+  height: 288px;
+  width: 512px;
+  background-color: #909090;
+  background-size: contain;
+  cursor: pointer;
+  margin: 30px;
+}
+.screenshot-hr {
+  margin: 1% 40% 2% 40%;
+}
+.screenshot-title {
+  text-align: center;
+}
+.screenshot-wrapper {
+  text-align: center;
+  background-color: #080808;
+  padding: 50px 300px;
+}
+
+/* ID's */
+#header {
+  width: 900px;
+  margin: 0 auto;
+  display: block;
+  padding: 50px 0;
+}
+#header-text {
+  padding-top: 100px;
+}
+#steam {
+  margin: 0 auto;
+  width: 60px;
+  display: block;
+  padding-top: 100px;
+}
+#top {
+  background-image: url('../img/header-back.jpg');
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Loader */ /* Not my code */
+.no-js #loader {
+	display: none;
+}
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../loader.gif) center no-repeat #fff;
+	background-color: #000;
+}
