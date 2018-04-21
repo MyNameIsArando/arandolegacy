@@ -107,13 +107,16 @@ ul {
   display: inline-block;
   width: 60%;
   vertical-align: top;
+  text-align: left;
 }
 .profile-content-subtitle {
   font-size: 1.3em;
   color: #909090;
+  text-align: left;
 }
 .profile-content-title {
   font-size: 1.8em;
+  text-align: left;
 }
 .module {
   margin-bottom: 70px;
@@ -229,6 +232,24 @@ ul {
   .container {
     padding: 50px 300px;
   }
+  .screenshot-wrapper {
+    text-align: center;
+    background-color: #080808;
+    padding: 50px 300px;
+  }
+  .profile {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .profile-content-subtitle {
+    font-size: 1.3em;
+    color: #909090;
+    text-align: left;
+  }
+  .profile-content-title {
+    font-size: 1.8em;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 1600px) {
   p {
@@ -255,6 +276,24 @@ ul {
   }
   .container {
     padding: 50px 300px;
+  }
+  .screenshot-wrapper {
+    text-align: center;
+    background-color: #080808;
+    padding: 50px 300px;
+  }
+  .profile {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .profile-content-subtitle {
+    font-size: 1.3em;
+    color: #909090;
+    text-align: left;
+  }
+  .profile-content-title {
+    font-size: 1.8em;
+    text-align: left;
   }
 }
 @media screen and (max-width: 1366px) {
@@ -283,6 +322,24 @@ ul {
   .container {
     padding: 50px 200px;
   }
+  .screenshot-wrapper {
+    text-align: center;
+    background-color: #080808;
+    padding: 50px 300px;
+  }
+  .profile {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .profile-content-subtitle {
+    font-size: 1.3em;
+    color: #909090;
+    text-align: left;
+  }
+  .profile-content-title {
+    font-size: 1.8em;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 640px) {
   p {
@@ -309,5 +366,23 @@ ul {
   }
   .container {
     padding: 10px 20px;
+  }
+  .screenshot-wrapper {
+    text-align: center;
+    background-color: #080808;
+    padding: 10px 20px;
+  }
+  .profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .profile-content-subtitle {
+    font-size: 1em;
+    color: #909090;
+    text-align: center;
+  }
+  .profile-content-title {
+    font-size: 1.4em;
+    text-align: center;
   }
 }
