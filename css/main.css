@@ -29,6 +29,9 @@ hr {
 	margin: 1% 40% 2% 40%;
 	border-top: 1px solid #fff;
 }
+html {
+  height: 100%;
+}
 p {
 	font-family: 'cyber';
 	font-size: 1.3em;
@@ -51,7 +54,7 @@ ul {
 .container {
   padding: 0 500px;
   display: block;
-  min-height: 100%;
+  height: 100%;
 }
 .effect {
   animation: textShadow 1.6s infinite;
@@ -106,8 +109,8 @@ ul {
 	margin: 0 auto;
 	display: block;
 	width: 50%;
-	margin-top: 70px;
-	margin-bottom: 20px;
+	padding-top: 70px;
+	padding-bottom: 20px;
 }
 #wallpaper {
   width: 70%;
@@ -403,9 +406,6 @@ ul {
 	#top-image {
 		width: 50%;
   }
-  #projects {
-    margin-top: 158px;
-  }
 	p {
 		font-size: 1.4em;
 	}
@@ -422,9 +422,6 @@ ul {
 @media screen and (max-width: 2560px) {
 	.container {
 		padding: 0 500px;
-  }
-  #projects {
-    margin-top: 115px;
   }
 	#top-image {
 		width: 50%;
@@ -446,9 +443,6 @@ ul {
 	.container {
     padding: 0 500px;
   }
-  #projects {
-    margin-top: 112px;
-  }
 	#top-image {
 		width: 50%;
 	}
@@ -468,9 +462,6 @@ ul {
 @media screen and (max-width: 1600px) {
 	.container {
     padding: 0 300px;
-  }
-  #projects {
-    margin-top: 20px;
   }
 	#top-image {
 		width: 38%;
@@ -496,9 +487,6 @@ ul {
 	.container {
     padding: 0 300px;
   }
-  #projects {
-    margin-top: 30px;
-  }
 	#top-image {
 		width: 38%;
 	}
@@ -515,10 +503,6 @@ ul {
 @media screen and (max-width: 640px) {
   .container {
 		padding: 0;
-  }
-  #projects {
-    margin-top: 60px;
-    padding: 0;
   }
 	#top-image {
     width: 90%;
