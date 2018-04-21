@@ -27,7 +27,7 @@
 		$(".se-pre-con").fadeOut("fast");;
 	});
 </script>
-	
+
 <body class="crt">
 	<div class="se-pre-con"></div>
 	<div id="top">
@@ -45,10 +45,42 @@
 
 		<p class="large-head">The Team</p>
 		<hr />
-		<p>Jonathan Polygon - Project Lead & Programmer</p>
-		<p>Lewis Hiscock - Asset/Interior Designer</p>
-		<p>Tyler Marc - Graphics/Web Designer & Writing</p>
-		<p>Andy Lupu - Bitcoin Invester and Real Estate Agent</p>
+		<div class="profile module">
+			<div class="profile-picture" style="background-image: url(img/profile/jonathan.jpg)"></div>
+			<div class="profile-content">
+				<p class="profile-content-title">Jonathan Polygon</p>
+				<p class="profile-content-subtitle">Project Lead & Programmer</p>
+				<br />
+				<p>----- BIO BIO BIO -----</p>
+			</div>
+		</div>
+		<div class="profile module">
+			<div class="profile-picture" style="background-image: url(img/profile/lewis.jpg)"></div>
+			<div class="profile-content">
+				<p class="profile-content-title">Lewis Hiscock</p>
+				<p class="profile-content-subtitle">Asset/Interior Designer</p>
+				<br />
+				<p>----- BIO BIO BIO -----</p>
+			</div>
+		</div>
+		<div class="profile module">
+			<div class="profile-picture" style="background-image: url(img/profile/tyler.png)"></div>
+			<div class="profile-content">
+				<p class="profile-content-title">Tyler Marc</p>
+				<p class="profile-content-subtitle">Graphics/Web Designer & Writing</p>
+				<br />
+				<p>----- BIO BIO BIO -----</p>
+			</div>
+		</div>
+		<div class="profile module">
+			<div class="profile-picture" style="background-image: url(img/profile/andy.jpg)"></div>
+			<div class="profile-content">
+				<p class="profile-content-title">Andy "Fixit Felix" Lupu</p>
+				<p class="profile-content-subtitle">Bitcoin Invester and Real Estate Agent</p>
+				<br />
+				<p>Has invested in all major cryptocoins including BTC, Litecoin, Turtle, Trumpcoin, Link, Monero and Ripple. Owns 30 million quid worth of land.</p>
+			</div>
+		</div>
 
 		<div class="section-sep"></div>
 
@@ -56,10 +88,10 @@
 	<div class="screenshot-wrapper">
 		<p class="screenshot-title large-head">Screenshots</p>
 		<hr class="screenshot-hr" />
-		<div class="screenshot" style="background-image: url(img/ss/1.jpg)"></div>
-		<div class="screenshot" style="background-image: url(img/ss/2.jpg)"></div>
-		<div class="screenshot" style="background-image: url(img/ss/3.jpg)"></div>
-		<div class="screenshot" style="background-image: url(img/ss/4.jpg)"></div>
+		<a href="img/ss/1.jpg"><div class="screenshot module" style="background-image: url(img/ss/1.jpg)"></div></a>
+		<a href="img/ss/2.jpg"><div class="screenshot module" style="background-image: url(img/ss/2.jpg)"></div></a>
+		<a href="img/ss/3.jpg"><div class="screenshot module" style="background-image: url(img/ss/3.jpg)"></div></a>
+		<a href="img/ss/4.jpg"><div class="screenshot module" style="background-image: url(img/ss/4.jpg)"></div></a>
 		<p class="screenshot-title">Screenshots from work in progress build</p>
 	</div>
 	
@@ -68,7 +100,7 @@
 	<div class="container">
 		<p class="large-head">Dev Blog</p>
 		<hr />
-		<div class="blog-wrapper">
+		<div class="blog-wrapper module">
 			<p class="blog-title">Build v0.2.1</p>
 			<p class="blog-date">20/04/2018</p>
 			<img src="img/blog/20april.jpg" class="blog-image" />
@@ -85,5 +117,63 @@
 			</p>
 		</div>
 	</div>
+	<footer><p class="footer-text">Monoxide Studios | 2018</p></footer>
+	<script>
+		(function($) {
+
+			/**
+			* Copyright 2012, Digital Fusion
+			* Licensed under the MIT license.
+			* http://teamdf.com/jquery-plugins/license/
+			*
+			* @author Sam Sehnert
+			* @desc A small plugin that checks whether elements are within
+			*     the user visible viewport of a web browser.
+			*     only accounts for vertical position, not horizontal.
+			*/
+
+			$.fn.visible = function(partial) {
+
+				var $t            = $(this),
+					$w            = $(window),
+					viewTop       = $w.scrollTop(),
+					viewBottom    = viewTop + $w.height(),
+					_top          = $t.offset().top,
+					_bottom       = _top + $t.height(),
+					compareTop    = partial === true ? _bottom : _top,
+					compareBottom = partial === true ? _top : _bottom;
+
+			return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+			};
+
+			})(jQuery);
+
+			var win = $(window);
+
+			var allMods = $(".module");
+
+			allMods.each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+			el.addClass("already-visible"); 
+			} 
+			});
+
+			win.scroll(function(event) {
+
+			allMods.each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+				el.addClass("come-in"); 
+			} 
+			});
+
+			});
+
+			$(window).scroll(function(){
+				$("#top").css("opacity", 1 - $(window).scrollTop() / 850);
+			});
+	</script>
 </body>
 </html>
