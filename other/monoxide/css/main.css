@@ -204,7 +204,62 @@ ul {
 
 }
 @media screen and (max-width: 2560px) {
-
+  p {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1em;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px #000;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  #header {
+    width: 900px;
+  }
+  .screenshot {
+    display: inline-block;
+    height: 288px;
+    width: 512px;
+    background-color: #909090;
+    background-size: contain;
+    cursor: pointer;
+    margin: 30px;
+  }
+  .container {
+    padding: 50px 300px;
+  }
+  .screenshot-wrapper {
+    text-align: center;
+    background-color: #080808;
+    padding: 50px 300px;
+  }
+  .profile {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .profile-content {
+    height: 200px;
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    text-align: left;
+  }
+  .profile-content-subtitle {
+    font-size: 1.3em;
+    color: #909090;
+    text-align: left;
+  }
+  .profile-content-title {
+    font-size: 1.8em;
+    text-align: left;
+  }
+  #steam {
+    margin: 0 auto;
+    width: 40px;
+    display: block;
+    padding-top: 600px;
+  }
 }
 @media screen and (max-width: 1900px) {
   p {
@@ -256,6 +311,12 @@ ul {
   .profile-content-title {
     font-size: 1.8em;
     text-align: left;
+  }
+  #steam {
+    margin: 0 auto;
+    width: 40px;
+    display: block;
+    padding-top: 220px;
   }
 }
 @media screen and (max-width: 1600px) {
