@@ -79,62 +79,62 @@
 		<p class="title-wide">Widescreen (16:9)</p>
 		<hr />
 		<a href="https://www.flickr.com/photos/160396666@N06/41235431542/">
-			<div class="item grow" style="background-image:url(img/11.jpg)">
+			<div class="item module" style="background-image:url(img/11.jpg)">
 				<p class="item-text">Artist: 佑りん | 1440p</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/27406183078/">
-			<div class="item grow" style="background-image:url(img/12.jpg)">
+			<div class="item module" style="background-image:url(img/12.jpg)">
 				<p class="item-text">Artist: ほ°ち | 1080p</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/40973273961/">
-			<div class="item grow" style="background-image:url(img/7.jpg)">
+			<div class="item module" style="background-image:url(img/7.jpg)">
 				<p class="item-text">Artist: あやみ | 1440p</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/40264316744/">
-			<div class="item grow" style="background-image:url(img/8.jpg)">
+			<div class="item module" style="background-image:url(img/8.jpg)">
 				<p class="item-text">Artist: あやみ | 1080p</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/26233018337/">
-			<div class="item grow" style="background-image:url(img/9.jpg)">
+			<div class="item module" style="background-image:url(img/9.jpg)">
 				<p class="item-text">Artist: kou mashiro | 4k</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/39295645390/">
-			<div class="item grow" style="background-image:url(img/10.jpg)">
+			<div class="item module" style="background-image:url(img/10.jpg)">
 				<p class="item-text">Artist: lf | 1080p</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/39114773780/">
-			<div class="item grow" style="background-image:url(img/1.jpg)">
+			<div class="item module" style="background-image:url(img/1.jpg)">
 				<p class="item-text">Artist: gyup | 1440p</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/27054139418/">
-			<div class="item grow" style="background-image:url(img/2.jpg)">
+			<div class="item module" style="background-image:url(img/2.jpg)">
 				<p class="item-text">Artist: りも | 4k</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/40218744684/">
-			<div class="item grow" style="background-image:url(img/3.jpg)">
+			<div class="item module" style="background-image:url(img/3.jpg)">
 				<p class="item-text">Artist: 緋月ひぐれ | 1080p</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/40218744444/">
-			<div class="item grow" style="background-image:url(img/4.jpg)">
+			<div class="item module" style="background-image:url(img/4.jpg)">
 				<p class="item-text">Artists: seki, necomi, kame^^ | 1440p</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/40941275841/">
-			<div class="item grow" style="background-image:url(img/5.jpg)">
+			<div class="item module" style="background-image:url(img/5.jpg)">
 				<p class="item-text">Artist: こうましろ | 4k</p>
 			</div>
 		</a>
 		<a href="https://www.flickr.com/photos/160396666@N06/40944960921/">
-			<div class="item grow" style="background-image:url(img/6.jpg)">
+			<div class="item module" style="background-image:url(img/6.jpg)">
 				<p class="item-text">Artist: つね吉 | 1080p</p>
 			</div>
 		</a>
@@ -145,5 +145,58 @@
 		<p style="font-size: 20px; margin: 20px 0;">Contact me @ MyNameIsArando#4810 or email me <a href="mailto:tylercrowhurst123@gmail.com" style="color: #808080">here</a><br />
 		Copyrights belong to their respective owners</p>
 	</div>
+	<script>
+			(function($) {
+			/**
+			* Copyright 2012, Digital Fusion
+			* Licensed under the MIT license.
+			* http://teamdf.com/jquery-plugins/license/
+			*
+			* @author Sam Sehnert
+			* @desc A small plugin that checks whether elements are within
+			*     the user visible viewport of a web browser.
+			*     only accounts for vertical position, not horizontal.
+			*/
+
+			$.fn.visible = function(partial) {
+
+				var $t            = $(this),
+					$w            = $(window),
+					viewTop       = $w.scrollTop(),
+					viewBottom    = viewTop + $w.height(),
+					_top          = $t.offset().top,
+					_bottom       = _top + $t.height(),
+					compareTop    = partial === true ? _bottom : _top,
+					compareBottom = partial === true ? _top : _bottom;
+
+			return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+			};
+
+			})(jQuery);
+
+			var win = $(window);
+
+			var allMods = $(".module");
+
+			allMods.each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+			el.addClass("already-visible"); 
+			} 
+			});
+
+			win.scroll(function(event) {
+
+			allMods.each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+				el.addClass("come-in"); 
+			} 
+			});
+
+			});
+
+	</script>
 </body>
 </html>
