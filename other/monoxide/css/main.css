@@ -277,11 +277,11 @@ ul {
   }
   #bossman {
     position: absolute;
-    display: none;
+    display: block;
     top: 0%;
     left: 75%;
     opacity: 0;
-    height: 1080px;
+    height: 1347px;
   }
 }
 @media screen and (max-width: 1920px) {
