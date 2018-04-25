@@ -34,7 +34,7 @@ html {
 }
 p {
 	font-family: 'cyber';
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color: white;
 	text-align: center;
 	text-shadow: 2px 2px #000;
@@ -427,7 +427,7 @@ ul {
 		width: 50%;
 	}
 	p {
-		font-size: 1.4em;
+		font-size: 1.2em;
 	}
 	#c {
 		font-size: 1em;
@@ -447,7 +447,7 @@ ul {
 		width: 50%;
 	}
 	p {
-		font-size: 1.35em;
+		font-size: 1.15em;
 	}
 	#c {
 		font-size: 1em;
@@ -467,7 +467,7 @@ ul {
 		width: 38%;
 	}
 	p {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	#c {
 		font-size: 1em;
@@ -491,7 +491,7 @@ ul {
 		width: 38%;
 	}
 	p {
-		font-size: 0.8em;
+		font-size: 0.6em;
 	}
 	#c {
 		font-size: 0.7em;
@@ -509,7 +509,7 @@ ul {
     margin-top: 10px;
 	}
 	p {
-		font-size: 0.7em;
+		font-size: 0.5em;
 	}
 	#c {
 		font-size: 0.6em;
