@@ -10,7 +10,10 @@ body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url("../img/tile.jpg");
+  background-image: url("../img/tile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 button {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -76,7 +79,7 @@ ul {
   opacity: 0;
   position: absolute;
   top: 2%;
-  left: 45%;
+  left: 47%;
 }
 .oi:hover {
   opacity: 1;
@@ -88,6 +91,10 @@ ul {
 }
 
 /* ID's */
+#cred {
+  font-size: 1em;
+  margin-top: 5px;
+}
 #projects {
   background-color: #080808;
   text-align: center;
@@ -177,7 +184,6 @@ ul {
 .blink {
 	animation: blinker 1s linear infinite;
 }
-  
 @keyframes blinker {
 	50% {
 		opacity: 0;
@@ -198,6 +204,13 @@ ul {
 @keyframes left {
   from { margin-left: -200px; }
   to { margin-left: 0; }
+}
+.fade {
+  animation: fade-in 3s;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 .grow {
 	transition: all .2s ease-in-out;
