@@ -157,7 +157,7 @@ ul {
   margin: 0 auto;
   width: 40px;
   display: block;
-  padding-top: 220px;
+  padding: 220px 5px 0 5px;
 }
 #top {
   background-image: url('../img/header-back.jpg');
@@ -167,6 +167,18 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#bossman {
+  position: absolute;
+  display: block;
+  top: 0%;
+  left: 75%;
+  opacity: 0;
+  height: 976px;
+}
+#bossman:hover {
+  opacity: 1;
 }
 
 /* Animations */
@@ -260,8 +272,16 @@ ul {
   #steam {
     margin: 0 auto;
     width: 40px;
-    display: block;
-    padding-top: 600px;
+    display: inline-block;
+    padding: 600px 5px 0 5px;
+  }
+  #bossman {
+    position: absolute;
+    display: none;
+    top: 0%;
+    left: 75%;
+    opacity: 0;
+    height: 1080px;
   }
 }
 @media screen and (max-width: 1920px) {
@@ -318,8 +338,16 @@ ul {
   #steam {
     margin: 0 auto;
     width: 40px;
+    display: inline-block;
+    padding: 220px 5px 0 5px;
+  }
+  #bossman {
+    position: absolute;
     display: block;
-    padding-top: 220px;
+    top: 0%;
+    left: 75%;
+    opacity: 0;
+    height: 976px;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -372,6 +400,14 @@ ul {
   .profile-content-title {
     font-size: 1.8em;
     text-align: left;
+  }
+  #bossman {
+    position: absolute;
+    display: none;
+    top: 0%;
+    left: 75%;
+    opacity: 0;
+    height: 1080px;
   }
 }
 @media screen and (max-width: 1366px) {
