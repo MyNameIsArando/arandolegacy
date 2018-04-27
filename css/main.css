@@ -55,12 +55,15 @@ ul {
 
 /* Classes */
 .container {
-  padding: 0 500px;
+  padding: 0 200px;
   display: block;
   height: 100%;
 }
 .effect {
   animation: textShadow 1.6s infinite;
+}
+.highlight {
+  color: lime;
 }
 .item {
 	height: 360px;
@@ -159,6 +162,52 @@ ul {
   cursor: pointer;
 }
 
+/* Animations */
+.blink {
+	animation: blinker 1s linear infinite;
+}
+.comein-left {
+  overflow: hidden;
+  animation: left 2s;
+}
+.comein-right {
+  overflow: hidden;
+  animation: right 2s;
+}
+.fade {
+  animation: fade-in 3s;
+}
+.grow {
+	transition: all .2s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.02);
+}
+.line-grow {
+  animation: linegrow 3s;
+}
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes left {
+  from { margin-left: -200px; }
+  to { margin-left: 0; }
+}
+@keyframes linegrow {
+  from { margin: 1% 50% 2% 50%; }
+  to { margin: 1% 40% 2% 40%; }
+}
+@keyframes right {
+  from { margin-right: -200px; }
+  to { margin-right: 0; }
+}
+
 /* Loader */ /* Not my code */
 .no-js #loader {
 	display: none;
@@ -178,52 +227,6 @@ ul {
 	z-index: 9999;
 	background: url(../loader.gif) center no-repeat #fff;
 	background-color: #000;
-}
-
-/* Animations */
-.blink {
-	animation: blinker 1s linear infinite;
-}
-@keyframes blinker {
-	50% {
-		opacity: 0;
-	}
-}
-.comein-right {
-  overflow: hidden;
-  animation: right 2s;
-}
-@keyframes right {
-  from { margin-right: -200px; }
-  to { margin-right: 0; }
-}
-.comein-left {
-  overflow: hidden;
-  animation: left 2s;
-}
-@keyframes left {
-  from { margin-left: -200px; }
-  to { margin-left: 0; }
-}
-.fade {
-  animation: fade-in 3s;
-}
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-.grow {
-	transition: all .2s ease-in-out;
-}
-.grow:hover {
-	transform: scale(1.05);
-}
-.line-grow {
-  animation: linegrow 3s;
-}
-@keyframes linegrow {
-  from { margin: 1% 50% 2% 50%; }
-  to { margin: 1% 40% 2% 40%; }
 }
 
 /* CRT SCANLINES (Add crt class to anything)*/ /* Not my code */
@@ -434,7 +437,7 @@ ul {
 }
 @media screen and (max-width: 2560px) {
 	.container {
-		padding: 0 500px;
+		padding: 0 300px;
   }
 	#top-image {
 		width: 468px;
@@ -454,7 +457,7 @@ ul {
 }
 @media screen and (max-width: 1920px) {
 	.container {
-    padding: 0 500px;
+    padding: 0 200px;
   }
 	#top-image {
 		width: 450px;
@@ -474,7 +477,7 @@ ul {
 }
 @media screen and (max-width: 1600px) {
 	.container {
-    padding: 0 300px;
+    padding: 0 100px;
   }
 	#top-image {
 		width: 38%;
@@ -498,7 +501,7 @@ ul {
 }
 @media screen and (max-width: 1366px) {
 	.container {
-    padding: 0 300px;
+    padding: 0 100px;
   }
 	#top-image {
 		width: 38%;
