@@ -70,7 +70,8 @@ ul {
 	width: 260px;
 	background-color: #000;
 	margin: 30px;
-	background-size: cover;
+  background-size: cover;
+  background-position: center;
 	cursor: pointer;
 	display: inline-block;
 }
@@ -514,7 +515,13 @@ ul {
 	}
 	#mute {
 		font-size: 0.7em;
-	}
+  }
+  #projects {
+    background-color: #080808;
+    text-align: center;
+    padding: 0 300px;
+    display: none;
+  }
 }
 @media screen and (max-width: 640px) {
   .container {
@@ -535,5 +542,11 @@ ul {
 	}
 	#title {
 		font-size: 1.8em;
-	}
+  }
+  #projects {
+  background-color: #080808;
+  text-align: center;
+  padding: 0;
+  display: none;
+  }
 }
