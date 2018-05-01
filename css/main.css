@@ -109,7 +109,7 @@ ul {
   background-color: #080808;
   text-align: center;
   padding: 20px 300px;
-  /* display: none; */
+  display: none;
 }
 #projects-subtitle {
   padding-bottom: 50px;
