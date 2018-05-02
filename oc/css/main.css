@@ -43,11 +43,12 @@ ul {
 	display: inline-block;
 }
 .item-wide {
-	height: 268px;
+	height: 266px;
 	width: 636px;
 	background-color: #222;
 	margin: 30px;
-	background-size: contain;
+	background-size: cover;
+	background-position: center;
 	cursor: pointer;
 	display: inline-block;
 }
