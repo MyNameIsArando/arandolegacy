@@ -43,8 +43,8 @@ ul {
 	display: inline-block;
 }
 .item-wide {
-	height: 270x;
-	width: 640px;
+	height: 268px;
+	width: 636px;
 	background-color: #222;
 	margin: 30px;
 	background-size: contain;
@@ -58,7 +58,7 @@ ul {
 }
 .item-text-wide {
 	vertical-align: middle;
-	line-height: 270px;
+	line-height: 268px;
 	font-size: 2em;
 }
 .title {
