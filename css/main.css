@@ -10,10 +10,7 @@ body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
-  background-image: url("../img/tile.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-image: url("https://img.discogs.com/5uOWbJbLH6nIkZWGUDVT0R1Awew=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-137880-1490504884-5963.jpeg.jpg");
 }
 button {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
