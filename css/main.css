@@ -1,7 +1,7 @@
 a {
 	text-decoration: none;
 	color: white;
-	text-shadow: 2px 2px 4px transparent;
+	text-shadow: 2px 2px black;
 }
 body {
 	margin: 0;
@@ -10,7 +10,7 @@ body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
-  background-image: url("../img/tile.png");
+  background-image: url("../img/tile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
