@@ -127,7 +127,8 @@ ul {
   height: 288px;
   width: 512px;
   background-color: #909090;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
   margin: 30px;
 }
@@ -303,7 +304,8 @@ ul {
     height: 288px;
     width: 512px;
     background-color: #909090;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     cursor: pointer;
     margin: 30px;
   }
