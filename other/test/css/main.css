@@ -30,7 +30,7 @@ img {
 	display: block;
 }
 p {
-	font-family: 'VT323', monospace;
+	font-family: cyber;
 	font-size: 1.4em;
 	color: white;
 	text-align: center;
@@ -39,6 +39,10 @@ p {
 }
 ul {
 	padding: 0;
+}
+@font-face {
+  font-family: cyber;
+  src: url("../font.ttf");
 }
 
 /* Classes */
@@ -75,7 +79,7 @@ ul {
 }
 .text-box {
   font-size: 12px;
-  padding: 20px;
+  padding: 20px 20px;
 }
 .extended-box {
 	display: inline-block;
@@ -98,13 +102,17 @@ ul {
 
 /* BIO CSS */
 #bio {
-  
+
 }
 #line {
-
+  margin: 1% 70% 1% 0;
 }
 #name {
-
+  font-size: 26px;
+  font-family: cyber;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
 }
 
 /* Misc */
