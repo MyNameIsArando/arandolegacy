@@ -34,8 +34,8 @@ p {
 	font-size: 1.4em;
 	color: white;
 	text-align: center;
-	text-shadow: 4px 4px #000;
-	margin: 0;
+  margin: 0;
+  text-transform: uppercase;
 }
 ul {
 	padding: 0;
@@ -71,7 +71,7 @@ ul {
 	display: inline-block;
 	margin: 0;
 	height: 260px;
-	width: 450px;
+	width: 470px;
 	background-color: #151515;
 	text-align: left;
   font-size: 1.2em;
@@ -84,8 +84,8 @@ ul {
 .extended-box {
 	display: inline-block;
 	margin: 0;
-	height: 200px;
-	width: 710px;
+	height: 260px;
+	width: 730px;
 	background-color: #202020;
   text-align: left;
   vertical-align: top;
@@ -93,22 +93,26 @@ ul {
 .links-box {
 	display: inline-block;
 	margin: 0;
-	height: 60px;
-	width: 710px;
+	height: 30px;
+	width: 730px;
 	background-color: #101010;
   text-align: left;
   vertical-align: top;
 }
 
 /* BIO CSS */
-#bio {
-
+.bio {
+  font-size: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-shadow: none;
 }
 #line {
-  margin: 1% 70% 1% 0;
+  margin: 1% 70% 3% 0;
 }
 #name {
-  font-size: 26px;
+  font-size: 32px;
   font-family: cyber;
   text-transform: uppercase;
   color: white;
@@ -118,6 +122,24 @@ ul {
 /* Misc */
 .text-left {
   text-align: left;
+}
+#expand {
+  color: green;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+#credit {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+#mute {
+  color: cyan;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
 }
 
 /* Loader */
