@@ -17,8 +17,8 @@ button {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 hr {
-	margin: 2% 44% 1% 44%;
-	border-top: 2px solid #fff;
+	margin: 0.5% 44% 0% 44%;
+	border-top: 1px solid #fff;
 }
 html {
 	height: 100%;
@@ -46,6 +46,7 @@ ul {
 }
 
 /* Classes */
+
 /* Boxes */
 .profile {
 	display: block;
@@ -82,13 +83,12 @@ ul {
   padding: 20px 20px;
 }
 .extended-box {
-  display: none;
+  display: block;
 	margin: 0 auto;
 	height: 260px;
 	width: 730px;
 	background-color: #202020;
   text-align: left;
-  vertical-align: top;
 }
 .links-box {
 	display: inline-block;
@@ -101,16 +101,6 @@ ul {
 }
 
 /* BIO CSS */
-.bio {
-  font-size: 15px;
-  text-align: left;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  text-shadow: none;
-}
-#line {
-  margin: 1% 70% 3% 0;
-}
 #name {
   font-size: 32px;
   font-family: cyber;
@@ -118,19 +108,25 @@ ul {
   color: white;
   margin: 0;
 }
-
-/* Misc */
-.text-left {
-  text-align: left;
+#line {
+  margin: 1% 70% 3% 0;
+  border-top: 2px solid #fff;
 }
-#expand {
-  color: green;
+.bio {
+  font-size: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-shadow: none;
+}
+#credit {
+  color: red;
   font-size: 14px;
   text-align: left;
   cursor: pointer;
 }
-#credit {
-  color: red;
+#expand {
+  color: green;
   font-size: 14px;
   text-align: left;
   cursor: pointer;
@@ -141,11 +137,75 @@ ul {
   text-align: left;
   cursor: pointer;
 }
+
+/* Extended Box CSS */
+#projects-title {
+  font-size: 18px;
+  padding-top: 10px;
+}
+#projects-container {
+  text-align: center;
+  padding: 10px;
+}
+.projects-box {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  margin: 0 5px;
+  background-size: contain;
+  background-position: center;
+  border-radius: 5px;
+  vertical-align: top;
+}
+.projects-text {
+  font-size: 11px;
+  text-shadow: 1px 1px #000;
+  vertical-align: middle;
+  line-height: 60px;
+}
+.extended-container {
+  padding: 5px;
+  text-align: center;
+}
+.side {
+  display: inline-block;
+}
+.extended-text-title {
+  font-size: 18px;
+  text-align: left;
+}
+.extended-line {
+  margin: 0.5% 70% 2% 0;
+}
+.extended-text {
+  font-size: 12px;
+  text-align: left;
+  text-shadow: none;
+}
+
+/* Links CSS */
 #links {
   text-shadow: none;
   font-size: 12px;
   vertical-align: middle;
   line-height: 30px;
+}
+.links-hightlight:hover {
+  color: #8e8e8e;
+}
+
+/* Misc */
+.text-left {
+  text-align: left;
+}
+
+/* Animations */
+.grow {
+	transition: all .2s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.05);
 }
 
 /* Loader */
