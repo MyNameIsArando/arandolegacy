@@ -37,7 +37,7 @@
 			<div class="text-box">
 				<h2 id="name">MyNameIsArando</h2>
 				<hr id="line" />
-				<p class="bio">I study at a College in the UK and I'll be going to Uni next year to study Computer Science.</p>
+				<p class="bio">I study in a College in the UK and I'll be going to Uni next year.</p>
 				<p class="bio">Whenever I'm not being blasted with assignments I attempt to make stuff and occasionally code&#8482;</p>
 				<br />
 				<p id="credit">Music: Nymano - See U Tonight</p>
@@ -73,17 +73,33 @@
 			</div>
 			<br />
 			<div class="extended-container">
-				<div class="side">
+				<div class="side-box">
 					<p class="extended-text-title">Known Languages</p>
 					<hr class="extended-line" />
-					<p class="extended-text">HTML/CSS: Well Versed</p>
-					<p class="extended-text">Javascript: Average</p>
-					<p class="extended-text">C#: Basic</p>
-					<p class="extended-text">VB: Basic</p>
-					<p class="extended-text">Node.js: Soon&#8482;</p>
+					<br />
+					<div class="side">
+						<p class="extended-text">HTML/CSS: </p>
+						<p class="extended-text">JS: </p>
+						<p class="extended-text">C#: </p>
+						<p class="extended-text">VB: </p>
+						<p class="extended-text">Node.js: </p>
+					</div>
+					<div class="side">
+						<p class="extended-text-right"><span class="good">Well Versed</span></p>
+						<p class="extended-text-right"><span class="warning">Average</span></p>
+						<p class="extended-text-right"><span class="warning">Basic</span></p>
+						<p class="extended-text-right"><span class="warning">Basic</span></p>
+						<p class="extended-text-right"><span class="shitemate">Soon&#8482;</span></p>
+					</div>
 				</div>
-				<div class="side">
-					
+				<div class="side-box">
+					<p class="extended-text-title">Other</p>
+					<hr class="extended-line" />
+					<p class="extended-text-center" id="recommend">Recommendations</p>
+					<p class="extended-text-center"><a href="https://twitter.com/newestmagazine/status/836740468591382528">Avi Credit</a></p>
+					<p class="extended-text-center empty">.</p>
+					<p class="extended-text-center"><a href="mailto:tylercrowhurst123@gmail.com">E-MAIL</a></p>
+					<p class="extended-text-center">MyNameIsArando#4810</p>
 				</div>
 			</div>
 		</div>
@@ -99,6 +115,43 @@
 			</p>
 		</div>
 	</div>
+	<div id="popup" class="modal">
+			<div class="pop-content">
+				<span class="close">&times;</span>
+				<p>Recommendations, AKA my shit taste...</p> 
+				<hr />
+				<p>
+					<span style="color: red;">Anime:</span><br />
+					The Monogatari Series <br />
+					JoJo's Bizarre Adventure <br />
+					AnoHana <br />
+					Durarara <br />
+					Index/Railgun <br />
+					Kuzu no Honkai <br />
+					Kore wa Zombie Desu ka? <br />
+					Hataraku Maou-sama! <br />
+					<br />
+					<span style="color: green;">Music:</span><br />
+					Dragonforce <br />
+					Babymetal <br />
+					BROCKHAMPTON <br />
+					Kendrick Lamar <br />
+					Undead Corporation <br />
+					Fear, and Loathing in Las Vegas <br />
+					Vektor <br />
+					Cannibal Corpse <br />
+					Death Grips <br />
+					<br />
+					<span style="color: cyan;">Video Games:</span><br />
+					Persona Series <br />
+					Hotlne Miami 1 & 2 <br />
+					Far Cry Series <br />
+					Steins;gate <br />
+					VA-11 HALL-A <br />
+					<img src="img/osu.png" style="margin: 0 auto; margin-top: 10px; display: block; width: 30%;" />
+				</p>
+			</div>
+		</div>
 	<audio autoplay loop id="volumedown">
 		<source src="audio.mp3" type="audio/mpeg">
 	</audio> 
@@ -114,6 +167,22 @@
 				$(".extended-box").slideToggle("slow");
 			});
 		});
+		// Modal //
+		var modal = document.getElementById('popup');
+		var btn = document.getElementById("recommend");
+		var span = document.getElementsByClassName("close")[0];
+
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
 	</script>
 </body>
 </html>

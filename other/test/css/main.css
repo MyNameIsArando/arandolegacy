@@ -24,9 +24,7 @@ html {
 	height: 100%;
 }
 img {
-	width: 450px;
 	margin: 0 auto;
-	padding: 130px;
 	display: block;
 }
 p {
@@ -83,7 +81,7 @@ ul {
   padding: 20px 20px;
 }
 .extended-box {
-  display: block;
+  display: none;
 	margin: 0 auto;
 	height: 260px;
 	width: 730px;
@@ -168,19 +166,36 @@ ul {
   padding: 5px;
   text-align: center;
 }
+.side-box {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 70px 0 70px;
+}
 .side {
   display: inline-block;
+  vertical-align: top;
+  margin: 0 3px;
 }
 .extended-text-title {
   font-size: 18px;
-  text-align: left;
+  text-align: center;
 }
 .extended-line {
-  margin: 0.5% 70% 2% 0;
+  margin: 0.5% 10% 2% 10%;
 }
 .extended-text {
   font-size: 12px;
   text-align: left;
+  text-shadow: none;
+}
+.extended-text-right {
+  font-size: 12px;
+  text-align: right;
+  text-shadow: none;
+}
+.extended-text-center {
+  font-size: 12px;
+  text-align: center;
   text-shadow: none;
 }
 
@@ -195,9 +210,48 @@ ul {
   color: #8e8e8e;
 }
 
+/* Span Colours */
+.good {
+  color: #00ff00;
+}
+.warning {
+  color: #ffff00;
+}
+.shitemate {
+  color: #ff0000
+}
+
 /* Misc */
 .text-left {
   text-align: left;
+}
+.empty {
+  color: transparent;
+}
+#recommend {
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.pop-content {
+  background-color: #101010;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
 }
 
 /* Animations */
