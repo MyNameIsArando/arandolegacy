@@ -124,7 +124,7 @@ ul {
 #top-image {
 	margin: 0 auto;
 	display: block;
-	width: 450px;
+	width: 400px;
 	padding-top: 70px;
 	padding-bottom: 20px;
 }
@@ -466,7 +466,7 @@ ul {
     padding: 0 200px;
   }
 	#top-image {
-		width: 450px;
+		width: 400px;
 	}
 	p {
 		font-size: 1.15em;
@@ -533,7 +533,7 @@ ul {
 		padding: 0;
   }
 	#top-image {
-    width: 70%;
+    width: 65%;
     margin-top: 10px;
 	}
 	p {
