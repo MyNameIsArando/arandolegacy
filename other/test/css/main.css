@@ -50,16 +50,18 @@ ul {
 	top: 50%;
 	transform: translateY(-50%);
 	text-align: center;
-	font-size: 0;
+  font-size: 0;
 }
 .avatar-box {
 	display: inline-block;
 	margin: 0;
 	height: 260px;
-	width: 260px;
+  width: 260px;
   background-color: #202020;
-  background-image: url(../avi.png);
-  background-size: contain;
+  background-image: url(../img/avi-temp.jpg);
+  background-size: cover;
+  background-position: center;
+  vertical-align: top;
 }
 .content-box {
 	display: inline-block;
@@ -68,7 +70,21 @@ ul {
 	width: 450px;
 	background-color: #151515;
 	text-align: left;
-	font-size: 1.2em;
+  font-size: 1.2em;
+  vertical-align: top;
+}
+.text-box {
+  font-size: 12px;
+  padding: 20px;
+}
+.extended-box {
+	display: inline-block;
+	margin: 0;
+	height: 200px;
+	width: 710px;
+	background-color: #202020;
+  text-align: left;
+  vertical-align: top;
 }
 .links-box {
 	display: inline-block;
@@ -76,7 +92,24 @@ ul {
 	height: 60px;
 	width: 710px;
 	background-color: #101010;
-	text-align: left;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* BIO CSS */
+#bio {
+  
+}
+#line {
+
+}
+#name {
+
+}
+
+/* Misc */
+.text-left {
+  text-align: left;
 }
 
 /* Loader */
