@@ -46,8 +46,12 @@
 			</div>
 		</div>
 		<br />
+		<div class="extended-box">
+
+		</div>
+		<br />
 		<div class="links-box">
-			
+			<p id="links">Steam | MyAnimeList | YouTube | Flickr | Github | Osu</p>
 		</div>
 	</div>
 	<audio autoplay loop id="volumedown">
@@ -59,6 +63,12 @@
 		function muteBg() {
 		document.getElementById("volumedown").volume = 0;
 		}
+		// JQuery Hide/Show for extendeded div //
+		$(document).ready(function(){
+			$("#expand").click(function(){
+				$(".extended-box").slideToggle("slow");
+			});
+		});
 	</script>
 </body>
 </html>

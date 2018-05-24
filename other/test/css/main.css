@@ -82,8 +82,8 @@ ul {
   padding: 20px 20px;
 }
 .extended-box {
-	display: inline-block;
-	margin: 0;
+  display: none;
+	margin: 0 auto;
 	height: 260px;
 	width: 730px;
 	background-color: #202020;
@@ -140,6 +140,12 @@ ul {
   font-size: 14px;
   text-align: left;
   cursor: pointer;
+}
+#links {
+  text-shadow: none;
+  font-size: 12px;
+  vertical-align: middle;
+  line-height: 30px;
 }
 
 /* Loader */
