@@ -203,7 +203,7 @@ ul {
 /* Links CSS */
 #links {
   text-shadow: none;
-  font-size: 12px;
+  font-size: 14px;
   vertical-align: middle;
   line-height: 30px;
 }
@@ -464,89 +464,6 @@ ul {
 }
 
 /* Mobile CSS */
-@media screen and (max-width: 1920px) {
-  p {
-    font-size: 1em;
-  }
-  #projects-title {
-    font-size: 18px;
-    padding-top: 10px;
-  }
-  .side-box {
-    margin: 15px 70px 0 70px;
-  }
-  .side {
-    display: inline-block;
-    margin: 0 3px;
-  }
-  .extended-text-title {
-    font-size: 18px;
-  }
-  .extended-text {
-    font-size: 12px;
-  }
-  .extended-text-right {
-    font-size: 12px;
-  }
-  .extended-text-center {
-    font-size: 12px;
-  }
-  #projects-container {
-    padding: 10px;
-  }
-  .projects-box {
-    width: 60px;
-    height: 60px;
-  }
-  .projects-text {
-    font-size: 11px;
-    line-height: 60px;
-  }
-  #name {
-    font-size: 32px;
-    font-family: cyber;
-  }
-  #links {
-    font-size: 12px;
-    line-height: 30px;
-  }
-  .bio {
-    font-size: 15px;
-  }
-  #credit {
-    font-size: 14px;
-  }
-  #expand {
-    font-size: 14px;
-  }
-  #mute {
-    font-size: 14px;
-  }
-  .avatar-box {
-    width: 260px;
-    height: 260px;
-  }
-  .projects-box {
-    width: 60px;
-    height: 60px;
-  }
-  .content-box {
-    height: 260px;
-    width: 470px;
-  }
-  .text-box {
-    font-size: 12px;
-    padding: 20px 20px;
-  }
-  .extended-box {
-    height: 260px;
-    width: 730px;
-  }
-  .links-box {
-    height: 30px;
-    width: 730px;
-  }
-}
 @media screen and (max-width: 750px) {
   p {
     font-size: 0.5em;
