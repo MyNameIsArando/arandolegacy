@@ -30,7 +30,7 @@ img {
 }
 p {
 	font-family: cyber;
-	font-size: 1.4em;
+	font-size: 1em;
 	color: white;
 	text-align: center;
   margin: 0;
@@ -444,4 +444,308 @@ ul {
   }
   .crt {
     animation: textShadow 1.6s infinite;
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 1920px) {
+  p {
+    font-size: 1em;
+  }
+  #projects-title {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .side-box {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 70px 0 70px;
+  }
+  .side {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 3px;
+  }
+  .extended-text-title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .extended-line {
+    margin: 0.5% 10% 2% 10%;
+  }
+  .extended-text {
+    font-size: 12px;
+    text-align: left;
+    text-shadow: none;
+  }
+  .extended-text-right {
+    font-size: 12px;
+    text-align: right;
+    text-shadow: none;
+  }
+  .extended-text-center {
+    font-size: 12px;
+    text-align: center;
+    text-shadow: none;
+  }
+  #projects-container {
+    text-align: center;
+    padding: 10px;
+  }
+  .projects-box {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    margin: 0 5px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 5px;
+    vertical-align: top;
+  }
+  .projects-text {
+    font-size: 11px;
+    text-shadow: 1px 1px #000;
+    vertical-align: middle;
+    line-height: 60px;
+  }
+  #name {
+    font-size: 32px;
+    font-family: cyber;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+  }
+  #links {
+    text-shadow: none;
+    font-size: 12px;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  #line {
+    margin: 1% 70% 3% 0;
+    border-top: 2px solid #fff;
+  }
+  .bio {
+    font-size: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-shadow: none;
+  }
+  #credit {
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 0;
+  }
+  #expand {
+    color: green;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+  }
+  #mute {
+    color: cyan;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .avatar-box {
+    width: 260px;
+    height: 260px;
+  }
+  .projects-box {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    margin: 0 5px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 5px;
+    vertical-align: top;
+  }
+  content-box {
+    display: inline-block;
+    margin: 0;
+    height: 260px;
+    width: 470px;
+    background-color: #151515;
+    text-align: left;
+    font-size: 1.2em;
+    vertical-align: top;
+  }
+  .text-box {
+    font-size: 12px;
+    padding: 20px 20px;
+  }
+  .extended-box {
+    display: none;
+    margin: 0 auto;
+    height: 260px;
+    width: 730px;
+    background-color: #202020;
+    text-align: left;
+  }
+  .links-box {
+    display: inline-block;
+    margin: 0;
+    height: 30px;
+    width: 730px;
+    background-color: #101010;
+    text-align: left;
+    vertical-align: top;
+  }
+}
+@media screen and (max-width: 640px) {
+  p {
+    font-size: 0.5em;
+  }
+  .avatar-box {
+    width: 130px;
+    height: 130px;
+  }
+  .content-box {
+    display: inline-block;
+    margin: 0;
+    height: 130px;
+    width: 235px;
+    background-color: #151515;
+    text-align: left;
+    font-size: 1.2em;
+    vertical-align: top;
+  }
+  .text-box {
+    font-size: 12px;
+    padding: 20px 20px;
+  }
+  .extended-box {
+    display: none;
+    margin: 0 auto;
+    height: 260px;
+    width: 365px;
+    background-color: #202020;
+    text-align: left;
+  }
+  .links-box {
+    display: inline-block;
+    margin: 0;
+    height: 16px;
+    width: 365px;
+    background-color: #101010;
+    text-align: left;
+    vertical-align: top;
+  }
+  .projects-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    margin: 0 5px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 5px;
+    vertical-align: top;
+  }
+  #name {
+    font-size: 16px;
+    font-family: cyber;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+  }
+  #line {
+    margin: 1% 70% 3% 0;
+    border-top: 2px solid #fff;
+  }
+  .bio {
+    font-size: 7px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-shadow: none;
+  }
+  #credit {
+    color: red;
+    font-size: 7px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: -10px;
+  }
+  #expand {
+    color: green;
+    font-size: 7px;
+    text-align: left;
+    cursor: pointer;
+  }
+  #mute {
+    color: cyan;
+    font-size: 7px;
+    text-align: left;
+    cursor: pointer;
+  }
+  #links {
+    text-shadow: none;
+    font-size: 7px;
+    vertical-align: middle;
+    line-height: 16px;
+  }
+  #projects-title {
+    font-size: 9px;
+    padding-top: 10px;
+  }
+  #projects-container {
+    text-align: center;
+    padding: 10px;
+  }
+  .projects-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    margin: 0 5px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 5px;
+    vertical-align: top;
+  }
+  .projects-text {
+    font-size: 6px;
+    text-shadow: 1px 1px #000;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  .side-box {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 30px 0 30px;
+  }
+  .side {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 3px;
+  }
+  .extended-text-title {
+    font-size: 9px;
+    text-align: center;
+  }
+  .extended-line {
+    margin: 0.5% 10% 2% 10%;
+  }
+  .extended-text {
+    font-size: 8px;
+    text-align: left;
+    text-shadow: none;
+  }
+  .extended-text-right {
+    font-size: 8px;
+    text-align: right;
+    text-shadow: none;
+  }
+  .extended-text-center {
+    font-size: 8px;
+    text-align: center;
+    text-shadow: none;
+  }
 }
