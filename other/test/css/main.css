@@ -566,39 +566,24 @@ ul {
     border-radius: 5px;
     vertical-align: top;
   }
-  content-box {
-    display: inline-block;
-    margin: 0;
+  .content-box {
     height: 260px;
     width: 470px;
-    background-color: #151515;
-    text-align: left;
-    font-size: 1.2em;
-    vertical-align: top;
   }
   .text-box {
     font-size: 12px;
     padding: 20px 20px;
   }
   .extended-box {
-    display: none;
-    margin: 0 auto;
     height: 260px;
     width: 730px;
-    background-color: #202020;
-    text-align: left;
   }
   .links-box {
-    display: inline-block;
-    margin: 0;
     height: 30px;
     width: 730px;
-    background-color: #101010;
-    text-align: left;
-    vertical-align: top;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
   p {
     font-size: 0.5em;
   }
