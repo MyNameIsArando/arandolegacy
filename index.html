@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Arando | Home</title>
+<title>Arando | Testing</title>
 <head>
 	<!-- Website & Images hosted by Github. -->
 	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
@@ -8,12 +8,13 @@
 	<!-- Coded from scratch using VSCode | Tested using Firefox -->
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<script src="js/script.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<meta property="title" content="MyNameIsArando">
-	<meta name="description" content="I can't actually code">
+	<meta name="description" content="a site for testing, which i probably won't use">
 	<meta name="author" content="MyNameIsArando">
 	<meta charset='utf-8'>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -22,29 +23,98 @@
 <script>
 	// Loader //
 	$(window).load(function() {
-		$(".se-pre-con").fadeOut("fast");;
+		$(".se-pre-con").fadeOut("slow");;
 	});
 </script>
 <body class="crt">
 	<div class="se-pre-con"></div>
-	<div class="container">
-		<img src="avi.png" class="fade grow" id="top-image" />
-		<p id="title" class="crt">MyNameIsArando</p>
-		<hr class="line-grow" />
-		<p class="comein-left">I study at a College in the UK and I'll be going to Uni next year to study Computer Science.</p>
-		<p class="comein-right">Whenever I'm not being blasted with assignments I attempt to make stuff and occasionally code&#8482;<span class="blink">_</span></p>
-		<p class="comein-left">Check out my work below.</p>
+	<div class="profile fade">
+		<div class="avatar-box"></div>
+		<div class="content-box">
+			<div class="text-box">
+				<h2 id="name">MyNameIsArando</h2>
+				<hr id="line" class="line-grow" />
+				<p class="bio">Student in the UK currently studying IT.</p>
+				<p class="bio">Whenever I'm not being blasted with assignments</p>
+				<p class="bio">I attempt to make stuff and occasionally code&#8482;</p>
+				<p class="bio">Check out my work below.</p>
+				<br />
+				<p id="credit" class="typewriter">Music: Nymano - See U Tonight</p>
+				<p id="expand">Click for more</p>
+				<p id="mute" onclick="muteBg()">Mute</p>
+			</div>
+		</div>
 		<br />
-		<p style="color: red; cursor: pointer;" id="pro" class="effect grow">Projects</p>
-		<p style="color: green; cursor: pointer;" id="recommend" class="effect grow">Recommendations</p>
-		<p style="color: cyan;" class="effect grow">Music: Nymano - See U Tonight</p>
+		<div class="extended-box">
+			<p id="projects-title">Projects</p>
+			<hr />
+			<div id="projects-container">
+				<a href="http://arando.club/oc">
+					<div class="projects-box grow" style="background-image: url(img/wp.png);">
+						<p class="projects-text">WP</p>
+					</div>
+				</a>
+				<a href="http://arando.club/theteam">
+					<div class="projects-box grow" style="background-image: url(img/team.png);">
+							<p class="projects-text">The Team</p>
+					</div>
+				</a>
+				<a href="https://drive.google.com/open?id=1Vxsl_MwHoxXrRpVlNGL2PSgXf--Ww07M">
+					<div class="projects-box grow" style="background-image: url(img/doro-klwp.png);">
+							<p class="projects-text">KLWP 1</p>
+					</div>
+				</a>
+				<a href="https://drive.google.com/open?id=1kIo_iREOjFRJqZOYooheLMEvS8HMW8wg">
+					<div class="projects-box grow" style="background-image: url(img/dokk-klwp.png);">
+							<p class="projects-text">KLWP 2</p>
+					</div>
+				</a>
+			</div>
+			<br />
+			<div class="extended-container">
+				<div class="side-box">
+					<p class="extended-text-title">Known Languages</p>
+					<hr class="extended-line" />
+					<br />
+					<div class="side">
+						<p class="extended-text">HTML/CSS: </p>
+						<p class="extended-text">JS: </p>
+						<p class="extended-text">C#: </p>
+						<p class="extended-text">VB: </p>
+						<p class="extended-text">Node.js: </p>
+					</div>
+					<div class="side">
+						<p class="extended-text-right"><span class="good">Well Versed</span></p>
+						<p class="extended-text-right"><span class="warning">Average</span></p>
+						<p class="extended-text-right"><span class="ohno">Basic</span></p>
+						<p class="extended-text-right"><span class="ohno">Basic</span></p>
+						<p class="extended-text-right"><span class="shitemate">Soon&#8482;</span></p>
+					</div>
+				</div>
+				<div class="side-box">
+					<p class="extended-text-title">Other</p>
+					<hr class="extended-line" />
+					<p class="extended-text-center" id="recommend">Recommendations</p>
+					<p class="extended-text-center"><a href="https://twitter.com/newestmagazine/status/836740468591382528">Avi Credit</a></p>
+					<p class="extended-text-center empty">.</p>
+					<p class="extended-text-center"><a href="mailto:tylercrowhurst123@gmail.com">E-MAIL</a></p>
+					<p class="extended-text-center">MyNameIsArando#4810</p>
+				</div>
+			</div>
+		</div>
 		<br />
-		<p class="typewriter"><a href="https://twitter.com/mynameisarando" class="social">TWITTER</a> | <a href="https://myanimelist.net/profile/mynameisarando" class="social">MYANIMELIST</a> | <a href="https://youtube.com/user/tylercrowhurst12345" class="social">YOUTUBE</a> | <a href="https://github.com/MyNameIsArando/mynameisarando.github.io" class="social">GITHUB</a> | <a href="http://steamcommunity.com/id/MyNameIsArando/" class="social">STEAM</a> | <a href="http://discord.gg/track44" class="social">DISCORD</a> | <a href="https://osu.ppy.sh/users/4993669" class="social">OSU</a> | <a href="https://www.paypal.me/TylerCrowhurst" class="social">PAYPAL</a> | <a href="https://www.flickr.com/people/160396666@N06/" class="social">Flickr</a></a></p>
-		<p class="fade">Currently learning <span class="highlight">C#</span>, <span class="highlight">VB</span> and <span class="highlight">Node.Js</span>.</p>
-		<p id="mute" onclick="muteBg()">Mute</p>
-		<a href="https://imgur.com/gallery/HnTf6Xr"><p id="cred">Avi Credit</p></a>
-		<a href="https://www.youtube.com/watch?v=dJ-3_XM2rVI" target="blank"><p class="oi">This is the best video on the internet - prove me wrong</p></a>
-		<div id="popup" class="modal">
+		<div class="links-box">
+			<p id="links">
+				<a href="http://steamcommunity.com/id/MyNameIsArando/" class="links-hightlight">Steam</a> | 
+				<a href="https://myanimelist.net/profile/mynameisarando" class="links-hightlight">MyAnimeList</a> | 
+				<a href="https://youtube.com/user/tylercrowhurst12345" class="links-hightlight">YouTube</a> | 
+				<a href="https://www.flickr.com/people/160396666@N06/" class="links-hightlight">Flickr</a> | 
+				<a href="https://github.com/MyNameIsArando/mynameisarando.github.io" class="links-hightlight">Github</a> | 
+				<a href="https://osu.ppy.sh/users/4993669" class="links-hightlight">Osu</a>
+			</p>
+		</div>
+	</div>
+	<div id="popup" class="modal">
 			<div class="pop-content">
 				<span class="close">&times;</span>
 				<p>Recommendations, AKA my shit taste...</p> 
@@ -81,42 +151,22 @@
 				</p>
 			</div>
 		</div>
-	</div>
 	<audio autoplay loop id="volumedown">
 		<source src="audio.mp3" type="audio/mpeg">
-	</audio>
-	<div id="projects">
-		<h2>Work</h2>
-		<hr />
-		<p id="projects-subtitle">Click to view/download</p>
-		<a href="http://arando.club/oc"><img src="img/wp.png" id="wallpaper" class="grow" /></a>
-		<br />
-		<a href="https://drive.google.com/open?id=1P4mHJzJ0DU2A_3098xH1zQHq8utowrJK">
-			<div class="item grow" style="background-image:url(img/va-11.png)">
-				<p class="item-text">VA-11 HALL-A KLWP WP</p>
-			</div>
-		</a>
-		<a href="http://arando.club/theteam">
-			<div class="item grow" style="background-image:url(img/team.png)">
-				<p class="item-text">TRACK 44 | THE TEAM</p>
-			</div>
-		</a>
-		<a href="https://drive.google.com/open?id=1gciCb4bgG1XooxlGx4tRPzesNUMiYbyb">
-			<div class="item grow" style="background-image:url(img/dokk.gif)">
-				<p class="item-text">R6S Dokkaebi KLWP</p>
-			</div>
-		</a>
-		<hr />
-		<h2>Contact</h2>
-		<p>Contact me in any way you desire. I make sure everything at least once daily. For the most success add MyNameIsArando#4810 on Discord or email me <a href="mailto:tylercrowhurst123@gmail.com" style="color: #707070;">here</a></p>
-		<footer class="foot"><p>&#169; MYNAMEISARANDO</p></footer>
-	</div>
+	</audio> 
 	<script>
-		// Audio Volume //
-		document.getElementById("volumedown").volume = 0.06;
+		// Audio Volume | Thanks Demi //
+		document.getElementById("volumedown").volume = 0.03;
 		function muteBg() {
 		document.getElementById("volumedown").volume = 0;
 		}
+		// JQuery Hide/Show for extendeded div //
+		$(document).ready(function(){
+			$("#expand").click(function(){
+				$(".extended-box").slideToggle("slow");
+			});
+		});
+		// Modal //
 		var modal = document.getElementById('popup');
 		var btn = document.getElementById("recommend");
 		var span = document.getElementsByClassName("close")[0];
@@ -132,12 +182,6 @@
 				modal.style.display = "none";
 			}
 		}
-
-		$(document).ready(function(){
-			$("#pro").click(function(){
-				$("#projects").slideToggle("slow");
-			});
-		});
 	</script>
 </body>
 </html>
