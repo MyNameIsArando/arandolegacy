@@ -262,6 +262,13 @@ ul {
 .grow:hover {
 	transform: scale(1.05);
 }
+.line-grow {
+  animation: linegrow 2s;
+}
+@keyframes linegrow {
+  from { margin: 1% 0 3% 0; }
+  to { margin: 1% 70% 3% 0; }
+}
 
 /* Loader */
 .no-js #loader {
