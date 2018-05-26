@@ -240,6 +240,16 @@ ul {
 #recommend {
   cursor: pointer;
 }
+#progress-bar[value] {
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 200px;
+  height: 4px;
+  background-color: #202020;
+  border: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
 
 /* Modal */
 .modal {
@@ -558,14 +568,4 @@ ul {
     border: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   }
-}
-#progress-bar[value] {
-  -webkit-appearance: none;
-   appearance: none;
-
-  width: 200px;
-  height: 4px;
-  background-color: #202020;
-  border: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
