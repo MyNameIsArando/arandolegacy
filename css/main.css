@@ -126,14 +126,14 @@ ul {
   cursor: pointer;
 }
 #expand {
-  color: green;
+  color: cyan;
   font-size: 16px;
   text-align: left;
   font-family: cyber;
   cursor: pointer;
 }
 #mute {
-  color: cyan;
+  color: green;
   font-size: 16px;
   text-align: left;
   cursor: pointer;

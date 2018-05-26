@@ -39,8 +39,8 @@
 				<br />
 				<br />
 				<p id="credit" class="typewriter">Music: Nymano - See U Tonight</p>
+				<p id="mute"><span onclick="pauseAudio()">Pause</span> | <span onclick="playAudio()">Unpause</span></p>
 				<p id="expand">Click for more</p>
-				<p id="mute"><span onclick="muteBg()">Mute</span> | <span onclick="unmuteBg()">Unmute</span></p>
 				<audio loop autoplay="autoplay" src="audio.mp3" id="music"></audio> 
 				<div id="audio_player">
 					<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
@@ -188,12 +188,15 @@
 	<script>
 		// Audio Volume | Thanks Demi //
 		document.getElementById("music").volume = 0.03;
-		function muteBg() {
-			document.getElementById("music").volume = 0;
-		}
-		function unmuteBg() {
-			document.getElementById("music").volume = 0.03;
-		}
+
+		// Play / Pause //
+		var x = document.getElementById("music"); 
+		function playAudio() { 
+			x.play(); 
+		} 
+		function pauseAudio() { 
+			x.pause(); 
+		} 
 		// JQuery Hide/Show for extendeded div //
 		$(document).ready(function(){
 			$("#expand").click(function(){
