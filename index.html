@@ -7,9 +7,8 @@
 	<!-- Contact Email: tylercrowhurst123@gmail.com -->
 	<!-- Coded from scratch using VSCode | Tested using Firefox -->
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/hover-min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<meta property="title" content="MyNameIsArando">
@@ -38,9 +37,15 @@
 				<p class="bio">I attempt to make stuff and occasionally code&#8482;</p>
 				<p class="bio">Check out my work below.</p>
 				<br />
+				<br />
 				<p id="credit" class="typewriter">Music: Nymano - See U Tonight</p>
 				<p id="expand">Click for more</p>
-				<p id="mute" onclick="muteBg()">Mute</p>
+				<p id="mute"><span onclick="muteBg()">Mute</span> | <span onclick="unmuteBg()">Unmute</span></p>
+				<audio loop autoplay="autoplay" src="audio.mp3" id="music"></audio> 
+				<div id="audio_player">
+					<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+				  	<input type="range" id="volume-bar" title="volume" min="0" max="10" step="1" value="10" style="display: none;">
+				</div>
 			</div>
 		</div>
 		<br />
@@ -49,22 +54,22 @@
 			<hr />
 			<div id="projects-container">
 				<a href="http://arando.club/oc">
-					<div class="projects-box grow" style="background-image: url(img/wp.png);">
+					<div class="projects-box hvr-float" style="background-image: url(img/wp.png);">
 						<p class="projects-text">WP</p>
 					</div>
 				</a>
 				<a href="http://arando.club/other/theteam">
-					<div class="projects-box grow" style="background-image: url(img/team.png);">
+					<div class="projects-box hvr-float" style="background-image: url(img/team.png);">
 							<p class="projects-text">The Team</p>
 					</div>
 				</a>
 				<a href="https://drive.google.com/open?id=1Vxsl_MwHoxXrRpVlNGL2PSgXf--Ww07M">
-					<div class="projects-box grow" style="background-image: url(img/doro-klwp.png);">
+					<div class="projects-box hvr-float" style="background-image: url(img/doro-klwp.png);">
 							<p class="projects-text">KLWP 1</p>
 					</div>
 				</a>
 				<a href="https://drive.google.com/open?id=1kIo_iREOjFRJqZOYooheLMEvS8HMW8wg">
-					<div class="projects-box grow" style="background-image: url(img/dokk-klwp.png);">
+					<div class="projects-box hvr-float" style="background-image: url(img/dokk-klwp.png);">
 							<p class="projects-text">KLWP 2</p>
 					</div>
 				</a>
@@ -83,8 +88,8 @@
 						<p class="extended-text">Node.js: </p>
 					</div>
 					<div class="side">
-						<p class="extended-text-right"><span class="good">Well Versed</span></p>
-						<p class="extended-text-right"><span class="warning">Average</span></p>
+						<p class="extended-text-right"><span class="good">Good</span></p>
+						<p class="extended-text-right"><span class="ohno">Basic</span></p>
 						<p class="extended-text-right"><span class="ohno">Basic</span></p>
 						<p class="extended-text-right"><span class="ohno">Basic</span></p>
 						<p class="extended-text-right"><span class="shitemate">Soon&#8482;</span></p>
@@ -104,12 +109,12 @@
 		<br />
 		<div class="links-box">
 			<p id="links">
-				<a href="http://steamcommunity.com/id/MyNameIsArando/" class="links-hightlight">Steam</a> | 
-				<a href="https://myanimelist.net/profile/mynameisarando" class="links-hightlight">MyAnimeList</a> | 
-				<a href="https://youtube.com/user/tylercrowhurst12345" class="links-hightlight">YouTube</a> | 
-				<a href="https://www.flickr.com/people/160396666@N06/" class="links-hightlight">Flickr</a> | 
-				<a href="https://github.com/MyNameIsArando/mynameisarando.github.io" class="links-hightlight">Github</a> | 
-				<a href="https://osu.ppy.sh/users/4993669" class="links-hightlight">Osu</a>
+				<a href="http://steamcommunity.com/id/MyNameIsArando/" class="links-hightlight hvr-pop">Steam</a> | 
+				<a href="https://myanimelist.net/profile/mynameisarando" class="links-hightlight hvr-pop">MyAnimeList</a> | 
+				<a href="https://youtube.com/user/tylercrowhurst12345" class="links-hightlight hvr-pop">YouTube</a> | 
+				<a href="https://www.flickr.com/people/160396666@N06/" class="links-hightlight hvr-pop">Flickr</a> | 
+				<a href="https://github.com/MyNameIsArando/mynameisarando.github.io" class="links-hightlight hvr-pop">Github</a> | 
+				<a href="https://osu.ppy.sh/users/4993669" class="links-hightlight hvr-pop">Osu</a>
 			</p>
 		</div>
 	</div>
@@ -150,12 +155,44 @@
 			</p>
 		</div>
 	</div>
-	<audio autoplay loop src="audio.mp3" id="volumedown"></audio> 
+	<script>
+		// Not my code, https://codepen.io/blackjacques/pen/LLQKKJ //
+		var player = document.getElementById('music'); // id for audio element
+		var duration; // Duration of audio clip
+		progressBar  = document.getElementById('progress-bar');
+		source       = document.getElementById('audioSource');
+
+		// Add a listener for the timeupdate event so we can update the progress bar
+		player.addEventListener('timeupdate', updateProgressBar, false);
+			
+		// Update the progress bar
+		function updateProgressBar() {
+		// Work out how much of the media has played via the duration and currentTime parameters
+		var percentage = Math.floor((100 / player.duration) * player.currentTime);
+		// Update the progress bar's value
+		progressBar.value = percentage;
+		// Update the progress bar's text (for browsers that don't support the progress element)
+		progressBar.innerHTML = progressBar.title = percentage + '% played';
+		}
+
+		function resetPlayer() {
+		progressBar.value = 0;
+		//clear the current song
+		player.src = '';
+		// Move the media back to the start
+		player.currentTime = 0;
+		// Set the play/pause button to 'play'
+		changeButtonType(btnPlayPause, 'play');
+		}  
+	</script>
 	<script>
 		// Audio Volume | Thanks Demi //
-		document.getElementById("volumedown").volume = 0.03;
+		document.getElementById("music").volume = 0.03;
 		function muteBg() {
-		document.getElementById("volumedown").volume = 0;
+			document.getElementById("music").volume = 0;
+		}
+		function unmuteBg() {
+			document.getElementById("music").volume = 0.03;
 		}
 		// JQuery Hide/Show for extendeded div //
 		$(document).ready(function(){

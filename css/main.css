@@ -29,7 +29,7 @@ img {
 	display: block;
 }
 p {
-	font-family: cyber;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 1em;
 	color: white;
 	text-align: center;
@@ -115,32 +115,36 @@ ul {
   font-size: 15px;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: -3px;
   text-shadow: none;
 }
 #credit {
   color: red;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
+  font-family: cyber;
   cursor: pointer;
 }
 #expand {
   color: green;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
+  font-family: cyber;
   cursor: pointer;
 }
 #mute {
   color: cyan;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   cursor: pointer;
+  font-family: cyber;
 }
 
 /* Extended Box CSS */
 #projects-title {
   font-size: 18px;
   padding-top: 10px;
+  font-family: cyber;
 }
 #projects-container {
   text-align: center;
@@ -148,11 +152,11 @@ ul {
 }
 .projects-box {
   display: inline-block;
-  width: 60px;
+  width: 100px;
   height: 60px;
   background-color: #000;
   margin: 0 5px;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   border-radius: 5px;
   vertical-align: top;
@@ -180,6 +184,7 @@ ul {
 .extended-text-title {
   font-size: 18px;
   text-align: center;
+  font-family: cyber;
 }
 .extended-line {
   margin: 0.5% 10% 2% 10%;
@@ -543,4 +548,14 @@ ul {
   .extended-text-center {
     font-size: 8px;
   }
+}
+#progress-bar[value] {
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 250px;
+  height: 5px;
+  background-color: #202020;
+  border: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
