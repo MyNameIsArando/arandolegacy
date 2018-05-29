@@ -250,6 +250,12 @@ ul {
   border: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
+#osu {
+  margin: 0 auto;
+  margin-top: 10px;
+  display: block;
+  width: 30%;
+}
 
 /* Modal */
 .modal {
