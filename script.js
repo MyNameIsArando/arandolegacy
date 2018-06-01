@@ -35,8 +35,12 @@ window.onclick = function(event) {
 		modal.style.display = "none";
 	}
 }
-
-
+// CRT Effect Toggle //
+$(document).ready(function(){
+    $("#crttoggle").click(function(){
+        $("body").toggleClass("crt");
+    });
+});
 
 
 // Not my code, https://codepen.io/blackjacques/pen/LLQKKJ //
