@@ -122,12 +122,10 @@
 				<span style="color: red;">Anime:</span><br />
 				The Monogatari Series <br />
 				JoJo's Bizarre Adventure <br />
-				AnoHana <br />
 				Durarara <br />
 				Index/Railgun <br />
 				Kuzu no Honkai <br />
 				Kore wa Zombie Desu ka? <br />
-				Hataraku Maou-sama! <br />
 				<br />
 				<span style="color: green;">Music:</span><br />
 				Dragonforce <br />
@@ -143,78 +141,12 @@
 				<span style="color: cyan;">Video Games:</span><br />
 				Persona Series <br />
 				Hotlne Miami 1 & 2 <br />
-				Far Cry Series <br />
 				Steins;gate <br />
 				VA-11 HALL-A <br />
 				<img src="img/osu.png" id="osu" />
 			</p>
 		</div>
 	</div>
-	<script>
-		// Not my code, https://codepen.io/blackjacques/pen/LLQKKJ //
-		var player = document.getElementById('music'); // id for audio element
-		var duration; // Duration of audio clip
-		progressBar  = document.getElementById('progress-bar');
-		source       = document.getElementById('audioSource');
-
-		// Add a listener for the timeupdate event so we can update the progress bar
-		player.addEventListener('timeupdate', updateProgressBar, false);
-			
-		// Update the progress bar
-		function updateProgressBar() {
-		// Work out how much of the media has played via the duration and currentTime parameters
-		var percentage = Math.floor((100 / player.duration) * player.currentTime);
-		// Update the progress bar's value
-		progressBar.value = percentage;
-		// Update the progress bar's text (for browsers that don't support the progress element)
-		progressBar.innerHTML = progressBar.title = percentage + '% played';
-		}
-
-		function resetPlayer() {
-		progressBar.value = 0;
-		//clear the current song
-		player.src = '';
-		// Move the media back to the start
-		player.currentTime = 0;
-		// Set the play/pause button to 'play'
-		changeButtonType(btnPlayPause, 'play');
-		}  
-	</script>
-	<script>
-		// Audio Volume | Thanks Demi //
-		document.getElementById("music").volume = 0.03;
-
-		// Play / Pause //
-		var x = document.getElementById("music"); 
-		function playAudio() { 
-			x.play(); 
-		} 
-		function pauseAudio() { 
-			x.pause(); 
-		} 
-		// JQuery Hide/Show for extendeded div //
-		$(document).ready(function(){
-			$("#expand").click(function(){
-				$(".extended-box").slideToggle("slow");
-			});
-		});
-		// Modal //
-		var modal = document.getElementById('popup');
-		var btn = document.getElementById("recommend");
-		var span = document.getElementsByClassName("close")[0];
-
-		btn.onclick = function() {
-			modal.style.display = "block";
-			modal.classList.add("fade");
-		}
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
