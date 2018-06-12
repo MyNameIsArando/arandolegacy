@@ -18,6 +18,7 @@ $(document).ready(function(){
 		$(".extended-box").slideToggle("slow");
 	});
 });
+
 // Modal //
 var modal = document.getElementById('popup');
 var btn = document.getElementById("recommend");
@@ -35,12 +36,14 @@ window.onclick = function(event) {
 		modal.style.display = "none";
 	}
 }
+
 // CRT Effect Toggle //
 $(document).ready(function(){
     $("#crttoggle").click(function(){
         $("body").toggleClass("crt");
     });
 });
+
 
 
 // Not my code, https://codepen.io/blackjacques/pen/LLQKKJ //
