@@ -12,10 +12,20 @@ function playAudio() {
 function pauseAudio() { 
 	x.pause(); 
 } 
-// JQuery Hide/Show for extendeded div //
+// JQuery Hide/Show for extendeded divs //
 $(document).ready(function(){
 	$("#expand").click(function(){
 		$(".extended-box").slideToggle("slow");
+	});
+});
+$(document).ready(function(){
+	$("#wp").click(function(){
+		$(".oc-container").slideToggle("slow");
+	});
+});
+$(document).ready(function(){
+	$("#wp").click(function(){
+		$("#arrow").slideToggle("slow");
 	});
 });
 
@@ -43,8 +53,6 @@ $(document).ready(function(){
         $("body").toggleClass("crt");
     });
 });
-
-
 
 // Not my code, https://codepen.io/blackjacques/pen/LLQKKJ //
 var player = document.getElementById('music'); // id for audio element

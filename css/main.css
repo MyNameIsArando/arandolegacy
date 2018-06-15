@@ -45,7 +45,9 @@ ul {
 }
 
 /* Classes */
-
+.container {
+  height: 100%;
+}
 /* Boxes */
 .profile {
 	display: block;
@@ -255,6 +257,15 @@ ul {
   margin-top: 10px;
   display: block;
   width: 30%;
+}
+#wp {
+  cursor: pointer;
+}
+#arrow {
+  width: 70px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: none;
 }
 
 /* Modal */
