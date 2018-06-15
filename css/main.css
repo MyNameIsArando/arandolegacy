@@ -301,11 +301,25 @@ ul {
   to { opacity: 1; }
 }
 .chacha {
-  animation: slide 1.2s;
+  animation: slide 1.8s;
 }
 @keyframes slide {
   from { margin-right: 300px; }
   to { margin-right: 0; }
+}
+.heavy {
+  animation: meme 1.8s;
+}
+@keyframes meme {
+  from { width: 470px; }
+  to { width: 730px; }
+}
+.heavyavi {
+  animation: memeavi 1.8s;
+}
+@keyframes memeavi {
+  from { width: 0; }
+  to { width: 260px; }
 }
 
 /* Loader */
