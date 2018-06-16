@@ -315,7 +315,7 @@ ul {
   animation: slide 1.8s;
 }
 @keyframes slide {
-  from { margin-right: 300px; }
+  from { margin-right: 500px; }
   to { margin-right: 0; }
 }
 .heavy {

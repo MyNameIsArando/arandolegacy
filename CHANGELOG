@@ -12,5 +12,8 @@
 2018-06-13 04:45 -  Made loader BG darker
 2018-06-15 20:53 -  Removed unused img & changed avi
 2018-06-15 21:04 -  Added new animation for page load
-2018-06-05 22:43 -  Removed OC page and added expandable section to home page.
-2018-06-05 22:48 -  Changed Arrow
+2018-06-15 22:43 -  Removed OC page and added expandable section to home page.
+2018-06-15 22:48 -  Changed Arrow
+2018-06-16 16:18 -  Slide animation is more aggressive
+                 -  'Hover' animations has been replaced with 'Shrink' for wallpaper section
+                 -  Box shadows added to Wallpaper items
