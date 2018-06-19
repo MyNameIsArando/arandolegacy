@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script src="smooth-scroll.polyfills.min.js"></script>
 	<meta property="title" content="All Web, No Code">
 	<meta name="description" content="I can't actually code despite what I say.">
 	<meta name="author" content="Tyler Marc">
@@ -55,9 +56,11 @@
 				<p id="projects-title">Projects</p>
 				<hr />
 				<div id="projects-container">
-					<div class="projects-box hvr-float" id="wp" style="background-image: url(img/wp.png);">
-						<p class="projects-text">Wallpapers</p>
-					</div>
+					<a href="#wp-link">
+						<div class="projects-box hvr-float" id="wp" style="background-image: url(img/wp.png);">
+							<p class="projects-text">Wallpapers</p>
+						</div>
+					</a>
 					<a href="https://drive.google.com/open?id=1Vxsl_MwHoxXrRpVlNGL2PSgXf--Ww07M">
 						<div class="projects-box hvr-float" style="background-image: url(img/doro-klwp.png);">
 								<p class="projects-text">KLWP 1</p>
@@ -149,7 +152,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="oc-container">
+	<div class="oc-container" id="wp-link">
 		<p class="oc-section-title">21:9</p>
 		<div class="oc-ultra-con">
 			<div class="oc-ultra-box hvr-shrink">
@@ -267,5 +270,8 @@
 		<p class="oc-section-copy">All Copyrights Belong to Their respective owners</p>
 	</div>
 	<script src="script.js"></script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
 </body>
 </html>

@@ -20,7 +20,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
 	$("#wp").click(function(){
-		$(".oc-container").slideToggle("slow");
+		$(".oc-container").toggle();
 	});
 });
 $(document).ready(function(){

@@ -17,3 +17,5 @@
 2018-06-16 16:18 -  Slide animation is more aggressive
                  -  'Hover' animations has been replaced with 'Shrink' for wallpaper section
                  -  Box shadows added to Wallpaper items
+2018-06-19 20:27 -  User now scrolls down to Wallpaper section when it is shown
+                 -  The now somewhat redundant arrow has a bounce animation now
