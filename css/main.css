@@ -10,9 +10,9 @@ body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url("../img/bg.png");
+	background-image: url("../img/bg.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
 }
 button {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -514,6 +514,10 @@ ul {
     animation: textShadow 1.6s infinite;
 }
 
+/* <1080p fixes */
+p {
+  font-size: 0.7em;
+}
 /* Mobile CSS */
 @media screen and (max-width: 750px) {
   p {
