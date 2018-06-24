@@ -23,11 +23,6 @@ $(document).ready(function(){
 		$(".oc-container").toggle();
 	});
 });
-$(document).ready(function(){
-	$("#wp").click(function(){
-		$("#arrow").slideToggle("slow");
-	});
-});
 
 // Modal //
 var modal = document.getElementById('popup');

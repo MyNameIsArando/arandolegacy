@@ -261,17 +261,6 @@ ul {
 #wp {
   cursor: pointer;
 }
-#arrow {
-  width: 70px;
-  margin: 0 auto;
-  padding-top: 15px;
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: bounce 3s linear infinite;
-  animation-direction: alternate;
-}
 
 /* Modal */
 .modal {
