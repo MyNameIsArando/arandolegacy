@@ -10,7 +10,7 @@ This Repo includes -
 - [Site Archive](http://arando.club/other/old)
 - [Index](http://arando.club/other/old)
 
-###Many Thanks to
+### Many Thanks to
 
 - [Pace.js](https://github.hubspot.com/pace/docs/welcome/) - Loading bar
 - [Van D](https://codepen.io/vaaandiep/pen/bpbbgN) - Loading wrapper
