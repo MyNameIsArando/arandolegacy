@@ -119,6 +119,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: -3px;
   text-shadow: none;
+  text-transform: none;
 }
 #credit {
   color: red;
