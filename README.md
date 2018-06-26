@@ -8,7 +8,7 @@ This Repo includes -
 - [My Site](http://arando.club/)
 - [Start Page](http://arando.club/other/start)
 - [Site Archive](http://arando.club/other/old)
-- [Index](http://arando.club/other/old)
+- [Index](http://arando.club/other/index)
 
 ### Many Thanks to
 
