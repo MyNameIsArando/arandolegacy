@@ -9,10 +9,12 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/oc.css" />
 	<link rel="stylesheet" type="text/css" href="css/hover-min.css" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/pace.css" />
+	<script src="css/pace.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-	<script src="smooth-scroll.polyfills.min.js"></script>
+	<script src="js/smooth-scroll.polyfills.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
 	<meta property="title" content="All Web, No Code">
 	<meta name="description" content="I can't actually code despite what I say.">
 	<meta name="author" content="Tyler Marc">
@@ -27,6 +29,7 @@
 	});
 </script>
 <body class="crt">
+	<div class="pace"></div>
 	<div class="container">
 		<div class="profile fade chacha">
 			<div class="avatar-box heavyavi"></div>
@@ -60,14 +63,14 @@
 							<p class="projects-text">Wallpapers</p>
 						</div>
 					</a>
-					<a href="https://drive.google.com/open?id=1Vxsl_MwHoxXrRpVlNGL2PSgXf--Ww07M">
-						<div class="projects-box hvr-float" style="background-image: url(img/doro-klwp.png);">
-								<p class="projects-text">KLWP 1</p>
-						</div>
-					</a>
 					<a href="https://drive.google.com/open?id=1kIo_iREOjFRJqZOYooheLMEvS8HMW8wg">
 						<div class="projects-box hvr-float" style="background-image: url(img/dokk-klwp.png);">
-								<p class="projects-text">KLWP 2</p>
+							<p class="projects-text">Dokk KLWP</p>
+						</div>
+					</a>
+					<a href="http://arando.club/other/start">
+						<div class="projects-box hvr-float" style="background-image: url(img/start.png);">
+							<p class="projects-text">Start Page</p>
 						</div>
 					</a>
 				</div>
@@ -278,7 +281,7 @@
 		</div>
 		<p class="oc-section-copy">All Copyrights Belong to Their respective owners</p>
 	</div>
-	<script src="script.js"></script>
+	<script src="js/script.js"></script>
 	<script>
 		var scroll = new SmoothScroll('a[href*="#"]');
 	</script>

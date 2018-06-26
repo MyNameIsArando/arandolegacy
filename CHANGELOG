@@ -32,3 +32,11 @@
                  -  Fix for 'Recommendations' on 720p displays
 2018-06-24 13:39 -  Fixed BG image  
                  -  In other news, I'm a dumbass
+2018-06-25 07:55 -  Removed loading screen for now
+2018-06-26 14:40 -  Made a Start Page @ arando.club/other/Start
+                 -  Replaced "Doro KLWP" project with Start Page
+                 -  Loading Wrapper is gone for good and has been replaced with Pace.JS
+                 -  Updated Index page
+                 -  Moved all Javascript files to a JS folder
+                 -  Updated Readme with more info and credits
+                 -  File cleanup
