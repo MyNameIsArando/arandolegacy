@@ -5,10 +5,10 @@ All code is free to use, edit to your hearts content.
 
 This Repo includes -
 
-- [My Site] (http://arando.club/)
-- [Start Page] (http://arando.club/other/start)
-- [Site Archive] (http://arando.club/other/old)
-- [Index] (http://arando.club/other/old)
+- [My Site](http://arando.club/)
+- [Start Page](http://arando.club/other/start)
+- [Site Archive](http://arando.club/other/old)
+- [Index](http://arando.club/other/old)
 
 ###Many Thanks to
 
