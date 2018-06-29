@@ -16,6 +16,9 @@
     font-family: cyber;
     padding-bottom: 5px;
 }
+.oc-section-drive {
+    width: 25px;
+}
 .oc-section-copy {
     font-size: 20px;
     text-transform: uppercase;
