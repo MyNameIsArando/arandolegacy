@@ -1,55 +1,56 @@
 2018-06-06 19:27 -  Github Bad
-2018-06-07 22:12 -  Added new WP
-2018-06-08 03:59 -  Changed BG image and Avi
+2018-06-07 22:12 -  Add new WP
+2018-06-08 03:59 -  Change BG image and Avi
 2018-06-08 04:06 -  HTML Cleanup & Avi Credit
 2018-06-10 05:04 -  New Wallpaper
 2018-06-10 05:28 -  Added Phone Wallpaper section to OC page with 6 new papes
 2018-06-12 16:25 -  New animation on load
-                 -  Changed MyAnimeList to MyAnimeList
+                 -  Change MyAnimeList to MyAnimeList
                  -  I think I can call myself decent at Javascript now right???
                  -  Cleaned up some JS
 2018-06-12 16:41 -  New Loader Gif
 2018-06-13 04:45 -  Made loader BG darker
-2018-06-15 20:53 -  Removed unused img & changed avi
-2018-06-15 21:04 -  Added new animation for page load
-2018-06-15 22:43 -  Removed OC page and added expandable section to home page.
-2018-06-15 22:48 -  Changed Arrow
+2018-06-15 20:53 -  Remove unused img & changed avi
+2018-06-15 21:04 -  Adde new animation for page load
+2018-06-15 22:43 -  Remove OC page and added expandable section to home page.
+2018-06-15 22:48 -  Change Arrow
 2018-06-16 16:18 -  Slide animation is more aggressive
                  -  'Hover' animations has been replaced with 'Shrink' for wallpaper section
                  -  Box shadows added to Wallpaper items
 2018-06-19 20:27 -  User now scrolls down to Wallpaper section when it is shown
                  -  The now somewhat redundant arrow has a bounce animation now
-2018-06-24 13:15 -  Added Phone Wallpaper section with 4 papes
-                 -  Added new pape to 21:9
-                 -  leaned up some old wallpapers
-                 -  Changed Avi
+2018-06-24 13:15 -  Add Phone Wallpaper section with 4 papes
+                 -  Add new pape to 21:9
+                 -  Cleaned up some old wallpapers
+                 -  Change Avi
                  -  Renamed a few files
                  -  New Music
-2018-06-24 13:16 -  Removed Arrow
+2018-06-24 13:16 -  Remove Arrow
 2018-06-24 13:21 -  I need to get better at not commiting everytime i edit a single line of code
-                 -  Changed Avi
-2018-06-24 13:36 -  Updated 'Avi Credit'
+                 -  Change Avi
+2018-06-24 13:36 -  Update 'Avi Credit'
                  -  Fix for 'Recommendations' on 720p displays
-2018-06-24 13:39 -  Fixed BG image  
+2018-06-24 13:39 -  Fix BG image  
                  -  In other news, I'm a dumbass
-2018-06-25 07:55 -  Removed loading screen for now
+2018-06-25 07:55 -  Remove loading screen for now
 2018-06-26 14:40 -  Made a Start Page @ arando.club/other/Start
-                 -  Replaced "Doro KLWP" project with Start Page
+                 -  Replace "Doro KLWP" project with Start Page
                  -  Loading Wrapper is gone for good and has been replaced with Pace.JS
-                 -  Updated Index page
-                 -  Moved all Javascript files to a JS folder
-                 -  Updated Readme with more info and credits
+                 -  Update Index page
+                 -  Move all Javascript files to a JS folder
+                 -  Updat Readme with more info and credits
                  -  File cleanup
-2018-06-26 14:46 -  Fixed links for Readme
-2018-06-26 17:15 -  Changed '|' in Links to '/'
+2018-06-26 14:46 -  Fixe links for Readme
+2018-06-26 17:15 -  Change '|' in Links to '/'
                  -  Bio text is no longer uppercase
-2018-06-27 02:16 -  Added animation to Start Page
-2018-06-28 17:40 -  Changed Image on Start Page
-                 -  Changed Image for Start Page project
-                 -  Added new pape to wallpapers
-2018-06-30 00:13 -  Added link to a Google Drive Folder with uncompressed wallpapers
-2018-07-04 22:34 -  Updated Discord Name
+2018-06-27 02:16 -  Add animation to Start Page
+2018-06-28 17:40 -  Change Image on Start Page
+                 -  Change Image for Start Page project
+                 -  Add new pape to wallpapers
+2018-06-30 00:13 -  Add link to a Google Drive Folder with uncompressed wallpapers
+2018-07-04 22:34 -  Update Discord Name
 2018-07-05 20:46 -  CRT effect is disabled for mobile CSS to save on system resources
 2018-07-14 15:54 -  Added 2 new papes & Start Page now links to tweetdeck
 2018-07-14 16:04 -  Added IkeaGaming to index
 2018-07-15 18:38 -  Added 2 new papes
+2018-07-19 00:57 -  Change AnimeList link to go to Kitsu since MAL a shit and still isn't up
