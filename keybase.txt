@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/arando
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://arando.club
+  * I am arando (https://keybase.io/arando) on keybase.
+  * I have a public key ASB2N8hIZPyXmu-t-W0_7SaFXwyZPmjHxCV2gaK762THkQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207637c84864fc979aefadf96d3fed26855f0c993e68c7c4257681a2bbeb64c7910a",
+      "host": "keybase.io",
+      "kid": "01207637c84864fc979aefadf96d3fed26855f0c993e68c7c4257681a2bbeb64c7910a",
+      "uid": "5668a68510c37c47052ac0183abb9719",
+      "username": "arando"
+    },
+    "merkle_root": {
+      "ctime": 1532201016,
+      "hash": "ce1246d0733f3e1703cbdbf614f4d25701efa9e96d46cd410f54d0e8d591633e62a048ca7c76e7b9844ef2456f425d215d7874bbe83c440531158d2e11803158",
+      "hash_meta": "f5bff35c5c5dcf3abb3ffaa8d08e6b7bac222eebdd9a9246461002e1c91485cc",
+      "seqno": 3308249
+    },
+    "service": {
+      "entropy": "mtGMADZpFN68+WlFIeskn7z6",
+      "hostname": "arando.club",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.3.0"
+  },
+  "ctime": 1532201036,
+  "expire_in": 504576000,
+  "prev": "0192d835afc9268a8c97240584b44f56705cd3c1f1d592f9c7c952f52c83c194",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgdjfISGT8l5rvrfltP+0mhV8MmT5ox8QldoGiu+tkx5EKp3BheWxvYWTESpcCFMQgAZLYNa/JJoqMlyQFhLRPVnBc08Hx1ZL5x8lS9SyDwZTEINod5HRpxl1GB9og85Q0dQq/sAi6QL/R0242pHTw8FYSAgHCo3NpZ8RA+eViQjYH2iyD0Ks3Qa5q9oTgip3oDnp5+JN3JrEl9cRLT0VbqDBhicqX/wB1N/jz0wkaedk3FIxzICdxbQXsDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB0CFd+enqT1czTNanvtzrIxNczXOHfsUEa3fyttVVnjo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/arando
+
+==================================================================
