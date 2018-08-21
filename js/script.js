@@ -20,7 +20,12 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
 	$("#wp").click(function(){
-		$(".oc-container").toggle();
+		$(".ocContainer").slideToggle("slow");
+	});
+});
+$(document).ready(function(){
+	$("#wpBack").click(function(){
+		$(".ocContainer").slideToggle("slow");
 	});
 });
 

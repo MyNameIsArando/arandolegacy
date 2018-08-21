@@ -1,8 +1,16 @@
 /* Container */
-.oc-container {
+.ocContainer {
     padding: 30px;
     background-color: #101010;
-    display: none;
+    display: none;;
+    position: absolute;
+    left: 0; top: 0;
+}
+#wpBack {
+    width: 100px; height: 100px;
+    position: absolute;
+    left: 0; top: 0;
+    cursor: pointer;
 }
 
 /* General */
