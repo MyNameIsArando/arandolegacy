@@ -293,7 +293,7 @@ ul {
 }
 
 #fansite {
-  width: 250px;
+  width: 220px;
   position: absolute; display: block;
   right: 2%; bottom: 0%;
 }
@@ -651,5 +651,8 @@ ul {
   }
   .crt {
     animation: none;
+  }
+  #fansite {
+    width: 50px;
   }
 }
