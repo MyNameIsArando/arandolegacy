@@ -2,6 +2,7 @@
 ### How To Not Code a Website
 
 All code is free to use, edit to your hearts content.
+Code is messy and I should rewrite it at some point but 2lazy
 
 This Repo includes -
 
