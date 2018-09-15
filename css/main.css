@@ -1,3 +1,5 @@
+/* I should really rewrite this */
+
 a {
 	text-decoration: none;
 	color: white;
@@ -125,6 +127,10 @@ ul {
   text-align: left;
   font-family: cyber;
   cursor: pointer;
+  transition: 0.5s;
+}
+#credit:hover {
+  padding-left: 5px;
 }
 #expand {
   color: cyan;
@@ -132,6 +138,10 @@ ul {
   text-align: left;
   font-family: cyber;
   cursor: pointer;
+  transition: 0.5s;
+}
+#expand:hover {
+  padding-left: 5px;
 }
 #mute {
   color: green;
@@ -139,6 +149,10 @@ ul {
   text-align: left;
   cursor: pointer;
   font-family: cyber;
+  transition: 0.5s;
+}
+#mute:hover {
+  padding-left: 5px;
 }
 
 /* Extended Box CSS */
@@ -160,6 +174,10 @@ ul {
   background-position: center;
   border-radius: 5px;
   vertical-align: top;
+  transition: 0.5s;
+}
+.projects-box:hover {
+  margin: 0 30px;
 }
 .projects-text {
   font-size: 11px;
@@ -203,6 +221,10 @@ ul {
   font-size: 12px;
   text-align: center;
   text-shadow: none;
+  transition: 0.5s;
+}
+.extended-text-center:hover {
+  color: #8e8e8e;
 }
 
 /* Links CSS */
@@ -212,8 +234,12 @@ ul {
   vertical-align: middle;
   line-height: 30px;
 }
-.links-hightlight:hover {
+.links-highlight {
+  transition: 0.5s;
+}
+.links-highlight:hover {
   color: #8e8e8e;
+  padding: 0 10px;
 }
 
 /* Span Colours */
@@ -267,7 +293,7 @@ ul {
 }
 
 #fansite {
-  width: 150px;
+  width: 250px;
   position: absolute; display: block;
   right: 2%; bottom: 0%;
 }
