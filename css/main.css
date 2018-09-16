@@ -151,8 +151,11 @@ ul {
   font-family: cyber;
   transition: 0.5s;
 }
-#mute:hover {
-  padding-left: 5px;
+.pAni {
+  transition: 0.5s;
+}
+.pAni:hover {
+  margin: 0 5px 0 0;
 }
 
 /* Extended Box CSS */

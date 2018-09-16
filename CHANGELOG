@@ -129,3 +129,5 @@
                  -  Changed animations to use transform/transition instead of HVR CSS (animation is the same)
 
 2018-09-15 19:40 -  Fix for mobile
+
+2018-05-16 01:16 -  New animation for pause/unpause buttons
