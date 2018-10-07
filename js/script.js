@@ -28,6 +28,11 @@ $(document).ready(function(){
 		$(".ocContainer").slideToggle("slow");
 	});
 });
+$(document).ready(function(){
+	$("#lmao").ready(function(){
+		$("#lmao").delay(1000).slideToggle("slow");
+	});
+});
 
 // Modal //
 var modal = document.getElementById('popup');

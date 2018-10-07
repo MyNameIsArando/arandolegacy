@@ -49,6 +49,9 @@ ul {
 .container {
   height: 100%;
 }
+#lmao {
+  display: none;
+}
 
 /* Boxes */
 .profile {
