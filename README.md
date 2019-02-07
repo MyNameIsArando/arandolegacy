@@ -1,15 +1,16 @@
-# mynameisarando.github.io
-### How To Not Code a Website
+# mynameisarandoArchive
+### How To Not Make Websites
 
-All code is free to use, edit to your hearts content.
-Code is messy and I should rewrite it at some point but 2lazy
+An Archive of my older personal websites. 
+Some code (especially code from older sites) is very messy. 
 
 This Repo includes -
 
-- [My Site](http://arando.club/)
-- [Start Page](http://arando.club/other/start)
-- [Site Archive](http://arando.club/other/old)
-- [Index](http://arando.club/other/index)
+- [Poseidon](http://mynameisarando.github.io/)
+- [Artemis](http://mynameisarando.github.io/other/artemis)
+- [Hermes](http://mynameisarando.github.io/other/hermes)
+- [Janus](http://mynameisarando.github.io/other/janus)
+- [Start Page](http://mynameisarando.github.io/other/start)
 
 ### Many Thanks to
 

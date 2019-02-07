@@ -1,0 +1,182 @@
+.container {
+    height: 100%;
+    width: 100%;
+}
+.divFade {
+    position: absolute;
+    height: 100%; width: 100%;
+    background-color: #000;
+    animation: fadeLoad 2.5s;
+    opacity: 0;
+}
+@keyframes fadeLoad {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.profile {
+    text-align: center;
+    font-size: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Profile Picture Box */
+#avatar {
+    display: inline-block;
+    position: relative;
+    top: 50%; transform: translateY(-50%);
+    width: 300px; height: 300px;
+    background-image: url('../img/hello.png');
+    background-size: cover; background-repeat: no-repeat; background-position: top;
+    background-color: #ffc0cb;
+    border: 4px solid #ffc0cb;
+    border-radius: 50px;
+    vertical-align: top;
+    font-size: 0;
+    cursor: pointer;
+    animation: hello 0.9s;
+    transition: all 0.5s;
+}
+#avatar:hover {
+    box-shadow: 0 0 30px #ffc0cb;
+}
+#avatar.avaBig {
+    width: 40%;
+    height: 100%;
+    border: 0px solid #ffc0cb;
+    border-radius: 0;
+}
+
+@keyframes hello {
+    from {height: 0px; margin-top: 70px;}
+    to {height: 300px; margin-top: 0;}
+}
+
+/* ////////// MENU CSS ////////// */
+
+/* ////////// Content Main Menu ////////// */
+.content {
+    display: inline-block;
+    height: 100%; width: 60%;
+    background-color: #151515;
+}
+
+.menuCont {
+    position: relative;
+    top: 50%; transform: translateY(-50%);
+}
+.menuText {
+    font-size: 18px; font-family: cyber;
+    color: #fff;
+}
+.menuText.title {
+    font-size: 42px;
+    text-shadow: 2px 2px 2px #000;
+}
+.menuText.subtitle {
+    font-size: 16px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* Menu Buttons */
+.menuItem {
+    display: inline-block; vertical-align: top;
+    width: 200px; height: 170px;
+    background-color: #353535; background-position: center;
+    background-size: cover;
+    border: 10px solid #040404;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menuItem.bottom {
+    width: 320px;
+    background-position: bottom;
+}
+.menuItem.top {
+    width: 680px;
+    background-image: url('../img/menu/top.png');
+}
+.menuItem.mute {
+    width: 150px; height: 40px;
+    border: none;
+    background-color: #252525;
+    background-image: url('../img/mute.png'); background-size: contain; background-repeat: no-repeat;
+}
+.menuItem.unmute {
+    background-image: url('../img/unmute.png');
+}
+.menuItem:hover {
+    transform: translateY(-6px);
+    box-shadow: 5px 7px 3px #9e9e9e;
+}
+.menuItem.mute:hover {
+    transform: none;
+    box-shadow: none;
+}
+.itemText {
+    font-size: 18px; font-family: cyber;
+    color: #fff; line-height: 170px;
+    text-shadow: 0 0 2px #000;
+}
+
+/* Menu Button Images */
+#me {
+    background-image: url('../img/menu/me.png');
+}
+#pro {
+    background-image: url('../img/menu/pro.jpg');
+}
+#so {
+    background-image: url('../img/menu/so.jpg');
+}
+#wa {
+    background-image: url('../img/menu/wa.jpg');
+}
+#mi {
+    background-image: url('../img/menu/mi.jpg');
+}
+
+/* ////////// Content Sub Menu ////////// */
+
+.subMenu {
+    display: inline-block;
+    position: relative;
+    width: 100%; height: 100%;
+    text-align: center;
+}
+
+
+/* //////////////////////////// */
+
+/* Sub Sections */
+.section {
+    display: inline-block;
+    position: relative;
+    width: 100%; height: 100%;
+    background-color: #070707;
+    text-align: center;
+}
+.section.wa {
+    background-color: #050505;
+}
+.section.mi {
+    background-color: #073008;
+}
+.exit {
+    position: absolute;
+    left: 0; bottom: 0;
+    cursor: pointer;
+}
+
+/* Audio */
+#progress-bar[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 60%; height: 10px;
+    background-color: #202020;
+    border: 0;
+}

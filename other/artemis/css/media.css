@@ -1,0 +1,143 @@
+@media screen and (max-width: 1440px) { 
+    .menuItem {
+        width: 130px; height: 130px;
+    }
+    .menuItem.bottom {
+        width: 215px;
+    }
+    .menuItem.top {
+        width: 470px;
+    }
+    .menuItem.mute {
+        width: 100px; height: 30px;
+    }
+    .itemText {
+        line-height: 130px;
+    }
+    /* Submenu */
+    .subHistory-item {
+        width: 160px; height: 90px;
+    }
+    .subHistory-text {
+        font-size: 14px;
+    }
+    /* Me Section */
+    .meProfile {
+        width: 150px; height: 150px;
+        transform: translateY(-90px);
+    }
+    .bioText {
+        font-size: 16px;
+    }
+    .bioText.title {
+        font-size: 36px;
+    }
+
+    /* Project Section */
+    .proItem {
+        height: 140px;
+    }
+    .proText {
+        font-size: 14px;
+    }
+
+    /* Social Section */
+    .soItem {
+        height: 14%;
+    }
+    .soImg {
+        width: 55px; height: 55px;
+    }
+    .soText {
+        font-size: 15px;
+    }
+
+    /* Misc Section */
+    .miText {
+        font-size: 12px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 760px) { 
+    #avatar.avaBig {
+        width: 30%;
+    }
+    .content {
+        width: 70%;
+    }
+    .section {
+        position: absolute;
+        top: 0; right: 0;
+        width: 70%;
+        transform: none;
+    }
+    /* .crt {
+        animation: unset;
+    } */
+    
+    /* Submenu */
+    .subHistory-item {
+        width: 140px; height: 70px;
+        margin: 4px 0;
+    }
+    .subHistory-text {
+        font-size: 14px;
+    }
+    /* Menu */
+    .menuItem {
+        width: 130px; height: 50px;
+    }
+    .menuText.title {
+        font-size: 36px;
+    }
+    .menuItem.top {
+        width: 130px;  height: 50px;
+    }
+    .menuItem.mute {
+        width: 150px; height: 60px;
+    }
+    .menuItem.bottom {
+        width: 130px; height: 50px;
+    }
+    .itemText {
+        line-height: 50px;
+    }
+
+    /* Me Section */
+    .meCover {
+        height: 25%;
+    }
+    .bioText {
+        font-size: 10px;
+        margin: 0 10px;
+    }
+    .bioText.title {
+        font-size: 20px;
+    }
+
+    /* Projects Section */
+    .proText {
+        font-size: 10px;
+    }
+    .proText.title {
+        font-size: 14px;
+    }
+    .proButton {
+        font-size: 8px;
+    }
+
+    /* Wallpaper Section */
+    .waText {
+        font-size: 10px;
+    }
+
+    /* Misc Section */
+    .miText {
+        font-size: 12px;
+    }
+
+    #progress-bar[value] {
+        width: 70%;
+    }
+}

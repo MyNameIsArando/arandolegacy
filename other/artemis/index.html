@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<title>Arando</title>
+<head>
+    <!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
+    <!-- Contact Email: tylercrowhurst123@gmail.com -->
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/section.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link rel="stylesheet" type="text/css" href="css/pace.css" />
+    <script src="js/pace.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+    <meta property="title" content="arando.xyz">
+    <meta name="description" content="i can't code, despite what i say">
+    <meta name="author" content="Tyler Marc">
+    <meta charset='utf-8'>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="pace"></div> <!-- Loading Bar/Icon -->
+    <div class="container">
+        <div class="profile">
+            <div class="divFade"></div>
+            <div id="avatar"></div>
+            <div class="content">
+                <!-- ////////// MENUS ///////// -->
+
+                <!-- Main Menu -->
+                <div class="menuCont">
+                    <div class="menuItem top" id="subOpen"><p class="itemText top"></p></div>
+                    <br />
+                    <div class="menuItem" id="me"><p class="itemText" id="meOpen">ME.</p></div>
+                    <div class="menuItem" id="pro"><p class="itemText" id="proOpen">PROJECT.</p></div>
+                    <div class="menuItem" id="so"><p class="itemText" id="soOpen">SOCIAL.</p></div>
+                    <br />
+                    <div class="menuItem bottom" id="wa"><p class="itemText" id="waOpen">WALL.</p></div>
+                    <div class="menuItem bottom" id="mi"><p class="itemText" id="miOpen">MISC.</p></div>
+                    <br />
+                    <div class="menuItem mute" id="mute"></div>
+                </div>
+
+                <!-- Sub Menu -->
+                <div class="subMenu">
+                    <div class="subHistory">
+                        <div class="subHistory-item center" style="background-image: url('img/menu/sub/2018-2.jpg')">
+                            <a href="http://mynameisarando.github.io"><div class="subHistory-text center">Apr 2018 - Oct 2018</div></a>
+                        </div>
+                        <div class="subHistory-item center" style="background-image: url('img/menu/sub/2018.jpg')">
+                            <a href="img/menu/sub/2018.jpg"><div class="subHistory-text center">Jan 2018 - Apr 2018</div></a>
+                        </div>
+                        <div class="subHistory-item center" style="background-image: url('img/menu/sub/2017.jpg')">
+                            <a href="img/menu/sub/2017.jpg"><div class="subHistory-text center">Aug 2017 - Jan 2018</div></a>
+                        </div>
+                        <p class="menuText center">Coming Soon</p>
+                    </div>
+                    <img src="img/exit.png" class="exit" id="subClose" />
+                </div>
+
+                <!-- ////////// SECTIONS ////////// -->
+
+                <!-- About Me Section-->
+                <div class="section me crt">
+                    <div class="meCover"></div>
+                    <div class="meProfile"></div>
+                    <p class="bioText title">Arando</p>
+                    <hr />
+                    <p class="bioText">Hello, I'm Arando.</p>
+                    <p class="bioText">I'm a guy that plays games and codes occasionally</p>
+                    <p class="bioText">Currently a full-time student</p>
+                    <div class="margin50"></div>
+                    <p class="bioText red">Art by BerryVerrine on Pixiv</p>
+                    <p class="bioText green">Music: Flamingosis - want me (need me)</p>
+                    <a href="http://mynameisarando.github.io/"><p class="bioText blue">Legacy Site</p></a>
+                    <img src="img/exit.png" class="exit" id="meClose" />
+                </div>
+                
+                <!-- Projects Section -->
+                <div class="section pro">
+                    <div class="proItem">
+                        <div class="proImg va11"></div>
+                        <div class="proContent">
+                            <p class="proText title">VA11HALLA.NET</p>
+                            <p class="proText">A fan site inspired by VA-11 HALL-A made in collaboration with <a href="http://iwantgodtoend.me/" class="linku">Demiture.</a> Still a work in progress, the Github repo can be found <a href="https://github.com/MyNameIsArando/va11halla.net" class="linku">here.</a></p>
+                        </div>
+                        <a href="http://va11halla.net"><button class="proButton">Link</button></a>
+                    </div>
+                    <div class="proItem">
+                        <div class="proImg start"></div>
+                        <div class="proContent">
+                            <p class="proText title">Start Page</p>
+                            <p class="proText">This is a page that links to various sites designed to act as your home/start page on your browser of choice. Links are easily changable. Github repo <a href="https://github.com/MyNameIsArando/mynameisarando.github.io" class="linku">here.</a></p>
+                        </div>
+                        <a href="http://mynameisarando.github.io/other/start"><button class="proButton">Link</button></a>
+                    </div>
+                    <div class="proItem">
+                        <div class="proImg soon"></div>
+                        <div class="proContent">
+                            <p class="proText title">COMING SOON...</p>
+                            <p class="proText"><br/><br/><br/></p>
+                        </div>
+                        <a href="wait.html"><button class="proButton">Link</button></a>
+                    </div>
+                    <p class="menuText">due for update, this place sucks</p>
+                    <img src="img/exit.png" class="exit" id="proClose" />
+                </div>
+
+                <!--Social Section -->
+                <div class="section so">
+                    <!-- Sometime down the line make stats use PHP instead of manually updating-->
+                    <a href="https://osu.ppy.sh/users/4993669"><div class="soItem osu">
+                        <div class="soBox">
+                            <img src="img/section/social/osu.png" class="soImg" />
+                            <p class="soText">#99,581| 2,580pp</p>
+                        </div>
+                    </div></a>
+                    <a href="https://myanimelist.net/profile/MyNameIsArando"><div class="soItem mal">
+                        <div class="soBox">
+                            <img src="img/section/social/mal.png" class="soImg" />
+                            <p class="soText">114 Days</p>
+                        </div>
+                    </div></a>
+                    <a href="https://www.youtube.com/channel/UC8VBC2E522pBfreqZNgzr9g"><div class="soItem yt">
+                        <div class="soBox">
+                            <img src="img/section/social/yt.png" class="soImg" />
+                            <p class="soText">10 Uploads</p>
+                        </div>
+                    </div></a>
+                    <a href="https://www.flickr.com/people/160396666@N06/"><div class="soItem flick">
+                        <div class="soBox">
+                            <img src="img/section/social/flickr.png" class="soImg" />
+                            <p class="soText">49 Images</p>
+                        </div>
+                    </div></a>
+                    <a href="https://github.com/MyNameIsArando/"><div class="soItem git">
+                        <div class="soBox">
+                            <img src="img/section/social/github.png" class="soImg" />
+                            <p class="soText">5 Repositories</p>
+                        </div>
+                    </div></a>
+                    <a href="https://steamcommunity.com/id/MyNameIsArando/"><div class="soItem steam">
+                        <div class="soBox">
+                            <img src="img/section/social/steam.png" class="soImg" />
+                            <p class="soText">134 Games (I play 2)</p>
+                        </div>
+                    </div></a>
+                    <img src="img/exit.png" class="exit" id="soClose" />
+                </div>
+
+                <!-- Wallpaper section -->
+                <div class="section wa">
+                    <a href="https://www.flickr.com/photos/160396666@N06/40953278045/"><div class="waItem one">
+                        <p class="waText">Artist: LF | 1080p</p>
+                    </div></a>
+                    <a href="https://www.flickr.com/photos/160396666@N06/41136853784/"><div class="waItem two">
+                        <p class="waText">Artist: イコモチ | 1440p</p>
+                    </div></a>
+                    <a href="https://www.flickr.com/photos/160396666@N06/27634204068/"><div class="waItem three">
+                        <p class="waText">Artist: LPIP | 1080p</p>
+                    </div></a>
+                    <a href="https://www.flickr.com/photos/160396666@N06/43379683362/"><div class="waItem four">
+                        <p class="waText">Artist: 菜★梗 | 1080p</p>
+                    </div></a>
+                    <a href="https://www.flickr.com/photos/160396666@N06/31964021187/"><div class="waItem five">
+                        <p class="waText">Artist: Timbougami | 1440p</p>
+                    </div></a>
+                    <a href="https://www.flickr.com/photos/160396666@N06/43076562990/"><div class="waItem six">
+                        <p class="waText">Artist: ふぁみ | 1080p</p>
+                    </div></a>
+                    <a href="https://www.flickr.com/photos/160396666@N06/29198615618/"><div class="waItem seven">
+                        <p class="waText">Artist: ヒラサト | 2160p</p>
+                    </div></a>
+                    <a href="https://www.flickr.com/photos/160396666@N06/42079334795/"><div class="waItem eight">
+                        <p class="waText">Artist: GIN00 | 1080p</p>
+                    </div></a>
+                    <a href="https://www.flickr.com/photos/160396666@N06/42687407584/"><div class="waItem nine">
+                        <p class="waText">Artist: りも | 2160p</p>
+                    </div></a>
+                    <a href="https://drive.google.com/open?id=1jl_11gh3Si4f980PcGofG1fVe9Z2gVvz"><div class="waItem drive">
+                        <p class="waText">Phone WP's + HQ Download</p>
+                    </div></a>
+                    <img src="img/exit.png" class="exit" id="waClose" />
+                </div>
+
+                <!-- Misc/Other Section -->
+                <div class="section mi crt">
+                    <div class="miBox">
+                        <p class="miText">> Languages <br /><br />
+                        HTML/CSS/JS - Well Versed <br />
+                        VB/PYTHON - Basic<br />
+                        C++ & C# - Currently learning<br />
+                        <br /><br /><br />
+                            
+                        > Recommendations <br /><br />
+                        Monogatari Series <br />
+                        Neon Genesis Evangelion <br />
+                        JoJo's Bizarre Adventure <br />
+                        Steins;gate <br />
+                        <br /><br /><br />
+
+                        > Build <br /><br />
+                        CPU - Ryzen 5 2600 @ 3.9Ghz <br />
+                        GPU - MSI GTX 1060 6GB ARMOR OC @2.1Ghz Core <br />
+                        RAM - CORSAIR 8GB (2x4) DDR4 2400MHZ <br />
+                        MON - 1x 1080p 144Hz + 2x 1080p 60Hz <br />
+                        OS - WINDOWS 10 / XUBUNTU
+                        <br /><br /><br />
+
+                        > Contact Information <br /><br />
+                        <a href="mailto:mynameisarando@track44.moe">mynameisarando@track44.moe</a> <br />
+                        Arando#0099 on Discord <br /><br /><br /></p>
+                        <p class="miText input">root@Artemis: ~ </p>
+                        
+                        <form class="terminal" >
+                            <input autofocus type="text" value="|" maxlength="12" oninput="testing()" id="jsInput" class="terminal crt">
+                        </form>
+
+                        <br /><br />
+
+                        <p class="miText" id="jsInput-text"></p>
+
+
+                    </div>
+                    <img src="img/exit.png" class="exit" id="miClose" />
+                </div>
+
+                <!-- Music Progress Bar -->
+                <div class="musicPlayer">
+                    <div id="audio_player">
+                        <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                        <input type="range" id="volume-bar" title="volume" min="0" max="10" step="1" value="10" style="display: none;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<!-- fix for chrome autoplay -->
+<iframe src="audio-chromefix.mp3" allow="autoplay" id="audio" style="display: none;"></iframe> 
+<audio autoplay loop id="jsVol">
+    <source src="audio.mp3">
+</audio>
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,224 @@
+/* Sub Menu CSS */
+.subHistory {
+    width: 100%; height: 30%;
+    background-color: #101010;
+    text-align: center;
+    display: inline-block;
+}
+.subHistory-item {
+    width: 260px; height: 146px;
+    display: inline-block;
+    margin: 0 10px;
+    background-size: cover;
+}
+.subHistory-text {
+    font-size: 16px; font-family: cyber;
+    text-transform: uppercase; text-shadow: 1px 1px 1px #000;
+    color: #fff;
+}
+
+/* Me. Section CSS */
+.meCover {
+    width: 100%; height: 30%;
+    background-image: url('../img/cover.jpg');
+    background-size: cover; background-position: center;
+}
+.meProfile {
+    display: block; margin: 0 auto;
+    width: 200px; height: 200px;
+    border: 4px solid #fff; border-radius: 10px;
+    background-image: url('../img/avi.jpg');
+    background-size: cover; background-position: center;
+    transform: translateY(-100px);
+    margin-bottom: -50px;
+}
+
+.bioText {
+    font-size: 18px; font-family: cyber;
+    text-shadow: 2px 2px 2px #000;
+}
+.bioText.title {
+    font-size: 48px; text-shadow: unset;
+    letter-spacing: 5px;
+}
+.bioText.red {
+    color: #ff0000; text-shadow: unset; 
+}
+.bioText.green {
+    color: #00ff00; text-shadow: unset; 
+}
+.bioText.blue {
+    color: #00ffff; text-shadow: unset; 
+}
+
+/* Project Section CSS */
+.proItem {
+    display: block;
+    margin: 0;
+    width: 100%; height: 20%;
+    background-color: #353535;
+    text-align: left;
+    border-bottom: 5px solid #101010;
+}
+.proImg {
+    display: inline-block;
+    width: 30%; height: 100%;
+    background-size: cover; background-position: center;
+    background-color: #9e9e9e;
+}
+.proImg.va11 {
+    background-image: url('../img/section/project/fansite.png')
+}
+.proImg.start {
+    background-image: url('../img/section/project/start.png')
+}
+.proImg.soon {
+    background-image: url('../img/section/project/soon.png')
+}
+
+.proContent {
+    height: 100%; width: 60%; 
+    display: inline-block; vertical-align: top;
+}
+.proText {
+    vertical-align: top;
+    font-size: 20px; font-family: cyber;
+    text-align: left; text-shadow: 2px 2px 2px #000;
+    margin: 0 15px;
+    animation: fade 4s;
+}
+.proText.title {
+    font-size: 26px; margin: 10px 15px; text-shadow: unset;
+}
+
+.proButton {
+    display: inline-block; vertical-align: top;
+    width: 10%; height: 100%;
+    font-size: 16px; font-family: cyber;
+    text-transform: uppercase;
+    color: #000; background-color: #fff; border: 0 solid #000;
+    cursor: pointer;
+    animation: fade 4s;
+    transition: 0.25s;
+}
+.proButton:hover {
+    color: #fff; background-color: #101010; border: 0 solid #9e9e9e;
+}
+
+/* Social Section CSS */
+.soItem {
+    width: 100%; height: 15%;
+    background-color: #404040;
+    background-size: cover; background-position: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.25s;
+}
+.soItem:hover {
+    opacity: 1;
+}
+.soItem.osu {
+    background-image: url('../img/section/social/osu-bg.png');
+}
+.soItem.mal {
+    background-image: url('../img/section/social/mal-bg.jpg');
+}
+.soItem.yt {
+    background-image: url('../img/section/social/yt-bg.png');
+}
+.soItem.flick {
+    background-image: url('../img/section/social/flickr-bg.jpg');
+}
+.soItem.git {
+    background-color: #000;
+}
+.soItem.steam {
+    background-image: url('../img/section/social/steam-bg.jpg');
+}
+
+.soBox {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.soImg {
+    display: block;
+    margin: 0 auto;
+    width: 90px; height: 90px;
+}
+.soText {
+    font-size: 18px; font-family: cyber;
+    text-shadow: 2px 2px 2px #000;
+    padding-top: 8px;
+}
+
+/* Wallpaper Section */
+.waItem {
+    display: inline-block; vertical-align: top;
+    width: 50%; height: 17%;
+    background-color: #404040;
+    background-size: cover; background-position: center;
+    transition: 0.25s;
+    opacity: 0.5;
+}
+.waItem:hover {
+    opacity: 1;
+}
+.waItem.one {
+    background-image: url('../img/oc/1.jpg');
+}
+.waItem.two {
+    background-image: url('../img/oc/2.jpg');
+}
+.waItem.three {
+    background-image: url('../img/oc/3.jpg');
+}
+.waItem.four {
+    background-image: url('../img/oc/4.jpg');
+}
+.waItem.five {
+    background-image: url('../img/oc/5.jpg');
+}
+.waItem.six {
+    background-image: url('../img/oc/6.jpg');
+}
+.waItem.seven {
+    background-image: url('../img/oc/7.jpg');
+}
+.waItem.eight {
+    background-image: url('../img/oc/8.jpg');
+}
+.waItem.nine {
+    background-image: url('../img/oc/9.jpg');
+}
+.waItem.drive {
+    background-image: url('../img/oc/drive.png');
+}
+
+.waText {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px; font-family: cyber;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* Misc Section */
+.miBox {
+    padding: 20px;
+    text-align: left;
+}
+.miText {
+    font-size: 16px; font-family: cyber; text-align: left;
+    color: #00ff66;
+}
+.miText.input {
+    display: inline;
+}
+.terminal {
+    font-size: 16px; font-family: cyber; text-align: left; text-transform: uppercase;
+    color: #00ff66;
+    background-color: transparent;
+    border: none;
+    display: inline;
+}

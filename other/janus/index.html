@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<title>MyNameIsArando | Legacy</title>
+
+<head>
+	<!-- Website & Images hosted by Github. BG Video hosted by doko.moe -->
+	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
+	<!-- Contact Email: tylercrowhurst123@gmail.com -->
+	<!-- Coded from scratch using VSCode | Tested using Firefox -->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet"> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<meta property="title" content="MyNameIsArando">
+	<meta name="description" content="A website I coded in my spare hours. Links to my profiles and various other places.">
+	<meta name="author" content="MyNameIsArando">
+	<meta charset='utf-8'>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script>
+	// Loader //
+	$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+<body style="background-color: #101010;">
+	<div class="se-pre-con"></div>
+	<div style="background-color: black; width: 100%; height: 100%; display: block;">
+		<video autoplay loop poster="" id="volumedown" class="vid top">
+			<source src="vid.mp4" type="video/mp4">
+			"It's 2017 what are you doing"
+		</video>
+	</div>
+
+	<div id="margin1"></div>
+	
+	<img src="avi.png" id="avi" alt="Avi" class="top chachaslide" />
+
+	<div id="margin2"></div>
+	
+	<div id="name" class="top chachaslide">		
+		<p id="name2">MYNAMEISARANDO</p>
+		<div id="square">
+
+		<p class="hello">HELLO, I'M ARANDO</p>
+		<p class="hello">PROBABLY THE MOST UNFUNNY GUY ON THE INTERNET</p>
+		<p class="hello">CURRENTLY STUDING AS A FULL-TIME STUDENT</p>
+
+		<ul id="fix">	
+			<a href="https://youtube.com/user/tylercrowhurst12345" target="blank" style="color:transparent;">
+				<img src="img/yt.png" alt="YouTube" class="shill grow" />
+			</a>
+			<a href="https://myanimelist.net/profile/MyNameIsArando" target="blank" style="color:transparent;">
+				<img src="img/mal.png" alt="Mal" class="shill grow" />
+			</a>
+			<a href="mailto:mynameisarando@track44.moe" target="blank" style="color:transparent;">
+				<img src="img/mail.png" alt="Steam" class="shill grow" />
+			</a>
+			<a href="https://twitter.com/arandovevo" target="blank" style="color:transparent;">
+				<img src="img/twitter.png" alt="Twitter" class="shill grow" />
+			</a>			
+			<a href="https://github.com/MyNameIsArando/mynameisarando.github.io" target="blank" style="color:transparent;">
+				<img src="img/github.png" alt="Github" class="shill grow" />
+			</a>
+			<a href="http://steamcommunity.com/id/MyNameIsArando/" target="blank" style="color:transparent;">
+				<img src="img/steam.png" alt="Steam" class="shill grow" />
+			</a>	
+		</ul>
+		</div>
+
+		<div id="colours" style="background-color: #444444;"></div>
+		<div id="colours" style="background-color: #7d4444;"></div>
+		<div id="colours" style="background-color: #3e5b42;"></div>
+		<div id="colours" style="background-color: #809f8a;"></div>
+		<div id="colours" style="background-color: #3f556c;"></div>
+		<div id="colours" style="background-color: #4a465a;"></div>
+		<div id="colours" style="background-color: #3b3b3d;"></div>
+
+		<br />
+		<div style="height: 200px;"></div>
+		<p id="datetime" class="chachaslide" style="letter-spacing: 10px; font-family: 'Open Sans', sans-serif;"></p>
+		<br />		
+		<p id="time_span" class="chachaslide" style="font-size: 11px; margin-top: 0px; letter-spacing: 10px; font-family: 'Open Sans', sans-serif;"></p>
+
+		<!-- <audio autoplay loop>
+
+			<source src="https://my.mixtape.moe/prxsqu.mp3" type="audio/mpeg">
+
+		</audio> -->
+
+		<!-- OG BG MUSIC LINK: https://my.mixtape.moe/prxsqu.mp3 -->
+		<!-- MUSIC SOURCE: Nymano - Sorry -->
+		
+	</div>
+
+	<p style="position: absolute; right: 1%; top: 97%;" class="top">&#169; | MyNameIsArando</p>
+
+	<script>
+		
+		// Time & Date | big shoutout to zwei //
+		function updateTime(){
+    		var currentTime = new Date()
+			var hours = currentTime.getHours()
+			var minutes = currentTime.getMinutes()
+			var seconds = currentTime.getSeconds()
+				if (seconds < 10){
+					seconds = "0" + seconds
+				}
+				if (minutes < 10){
+					minutes = "0" + minutes
+				}
+				var t_str = hours + ":" + minutes + ":" + seconds;
+				if(hours > 11){
+					t_str += "";
+				} else {
+					t_str += "";
+				}
+				document.getElementById('time_span').innerHTML = t_str;
+			}
+			setInterval(updateTime, 1000);
+			
+		// Date //
+		function dateTime(){
+			var dt = new Date();
+			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
+		}
+		setInterval(dateTime, 1000);
+			
+		// Audio Volume - Demiture//
+		document.getElementById("volumedown").volume = 0.8;
+
+		function muteBg() {
+			document.getElementById("volumedown").volume = 0;
+		}
+
+		function unmuteBg() {
+			document.getElementById("volumedown").volume = 0.05;
+		}
+
+		$(document).ready(function(){
+			$("#btc").click(function(){
+				$("#crypto").slideToggle("slow");
+			});
+		});
+
+		$(window).scroll(function(){
+            $(".top").css("opacity", 1 - $(window).scrollTop() / 530);
+        });
+
+	</script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
