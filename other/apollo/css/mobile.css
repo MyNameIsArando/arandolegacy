@@ -1,0 +1,213 @@
+a {
+    text-decoration: none;
+    color: unset;
+}
+body {
+	margin: 0; padding: 0;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    height: 100%; width: 100%;
+}
+h1 {
+    margin: 0;
+}
+hr {
+	margin: 1% 40% 2.5% 40%;
+	border-top: 1px solid #fff;
+}
+html {
+	height: 100%;
+}
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    color: white;
+    text-align: center; text-transform: uppercase;
+    margin: 0;
+}
+@font-face {
+  font-family: cyber;
+  src: url("../vcr.ttf");
+}
+
+/* General Classes */
+.container {
+    display: block; margin: 0 auto;
+    text-align: center;
+    height: 100%;
+}
+.center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Main */
+.contentCenter {
+    width: 100%; height: 100%;
+    display: inline-block; vertical-align: middle;
+    background-color: #202020;
+}
+.content {
+    width: 300px; height: 600px;
+    display: inline-block; vertical-align: middle;
+    background-color: none;
+}
+
+/* Center */
+.cover {
+    width: 100%; height: 30%; 
+    background-image: url('../img/cover.png'); background-color: #505050;
+    background-position: center; background-size: cover;
+    animation: covLoad 0.7s; animation-delay: 0.25s; animation-fill-mode: forwards;
+}
+.avatar {
+    width: 50%; height: 25%;
+    display: block; margin: 0 auto -110px auto;
+    transform: translateY(-150px);
+    background-image: url('../img/avi.jpg'); background-position: center;
+    background-size: cover; background-color: #303030;
+    animation: aviLoad 0.6s; animation-delay: 0.75s; animation-fill-mode: forwards;
+}
+.fade {
+    opacity: 0;
+    animation: fade 0.5s; animation-delay: 1.25s; animation-fill-mode: forwards;
+}
+.bio {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    text-shadow: none;
+    color: #fff;
+    margin-bottom: 3px;
+}
+.bio.title {
+    font-size: 4.2em;
+    font-family: cyber;
+}
+.bio.red {
+    color: red;
+}
+.bio.green {
+    color: lime;
+}
+.bio.blue {
+    color: cyan;
+}
+#gap {
+    color: transparent;
+}
+
+.icon {
+    width: 80px; height: 80px;
+    display: inline-block;
+    margin: 40px 10px 0 10px;
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.icon.left {
+    background-image: url('../img/left.png');
+}
+.icon.right {
+    background-image: url('../img/right.png');
+}
+.icon.unmute {
+  background-image: url('../img/unmute.png');
+}
+.icon.mute {
+    background-image: url('../img/mute.png') !important;
+}
+.icon.flip {
+    transform: rotate(180deg);
+}
+
+/* General Content */
+.box {
+    width: 100%; height: 100%;
+    display: none;
+    background-color: #303030;
+}
+.close {
+    position: absolute;
+    width: 100px; height: 100px;
+    top: 1%; right: 1%;
+    cursor: pointer;
+}
+
+/* Left Content */
+.west {
+    float: right;
+}
+.section {
+    width: 100%; height: 33.3333%; font-size: 0;
+}
+.sectionTitle-box {
+    width: 100%; height: 20%;
+    background-color: #303030; 
+}
+.sectionTitle {
+    text-align: center; text-shadow: 1px 1px #000;
+    font-size: 40px; font-family: cyber;
+    color: #fff;
+    text-transform: uppercase;
+}
+.sectionBox {
+    width: 33.3333%; height: 80%;
+    display: inline-block;
+    background-color: #000; background-size: cover; background-position: center;
+    vertical-align: top;
+    transition: 0.2s;
+}
+.sectionBox.wide {
+    width: 50%; height: 80%;
+}
+.sectionBox.social {
+    width: 33.3333%; height: 40%;
+}
+.sectionBox:hover {
+    opacity: 0.2;
+}
+
+/* Project Images */
+.sectionBox.pro1 {
+    background-image: url('../img/project/1.jpg');
+}
+.sectionBox.pro2 {
+    background-image: url('../img/project/2.jpg');
+}
+.sectionBox.pro3 {
+    background-image: url('../img/project/3.jpg');
+}
+
+/* Social Images */
+.sectionBox.so1 {
+    background-image: url('../img/social/osu.jpg');
+}
+.sectionBox.so2 {
+    background-image: url('../img/social/mal.png');
+}
+.sectionBox.so3 {
+    background-image: url('../img/social/yt.png');
+}
+.sectionBox.so4 {
+    background-image: url('../img/social/steam.png');
+}
+.sectionBox.so5 {
+    background-image: url('../img/social/flickr.png');
+}
+.sectionBox.so6 {
+    background-image: url('../img/social/github.png');
+}
+
+/* Right Content */
+.east {
+    background-color: #073008;
+}
+.terText {
+    font-size: 2em;
+    font-family: cyber;
+    color: #00ff66;
+    text-align: left;
+    padding: 3%;
+    opacity: 1;
+    animation: fade 1.5s; animation-delay: 0.5s; animation-fill-mode: forwards;
+}
