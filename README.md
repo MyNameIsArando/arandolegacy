@@ -2,11 +2,12 @@
 ### How To Not Make Websites
 
 An Archive of my older personal websites. 
-Some code (especially code from older sites) is very messy. 
+Code is messy, be warned :)
 
 This Repo includes -
 
-- [Ares](http://mynameisarando.github.io/other/hades)
+- [Dionysus](http://mynameisarando.github.io/other/dionysus)
+- [Hades](http://mynameisarando.github.io/other/hades)
 - [Ares](http://mynameisarando.github.io/other/ares)
 - [Apollo](http://mynameisarando.github.io/other/apollo)
 - [Poseidon](http://mynameisarando.github.io/other/posidon)
