@@ -1,11 +1,12 @@
 # mynameisarandoArchive
 ### How To Not Make Websites
 
-An Archive of my older personal websites. 
+An Archive of my older personal websites. Feel free to use.
 Code is messy, be warned :)
 
 This Repo includes -
 
+- [Zeus](http://mynameisarando.github.io/other/zeus)
 - [Dionysus](http://mynameisarando.github.io/other/dionysus)
 - [Hades](http://mynameisarando.github.io/other/hades)
 - [Ares](http://mynameisarando.github.io/other/ares)
